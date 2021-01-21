@@ -29,14 +29,16 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
 Route::get('/doctor', [DoctorController::class, 'index'])
     ->name('doctor')
     ->middleware('auth');
-Route::post('/doctor', [DoctorController::class, 'store']);
+Route::post('/doctor/create', [DoctorController::class, 'store']);
+Route::get('/doctor/create', [DoctorController::class, 'create'])->name('doctor.create');
 Route::get('/doctor/{id}', [DoctorController::class, 'show'])->name('doctor.show');
 Route::delete('/doctor/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy');
 
 Route::get('/patient', [PatientController::class, 'index'])
     ->name('patient')
     ->middleware('auth');
-Route::post('/patient', [PatientController::class, 'store']);
+Route::post('/patient/create', [PatientController::class, 'store']);
+Route::get('/patient/create', [PatientController::class, 'create'])->name('patient.create');
 Route::get('/patient/{id}', [PatientController::class, 'show'])->name('patient.show');
 Route::delete('/patient/{id}', [PatientController::class, 'destroy'])->name('patient.destroy');
 

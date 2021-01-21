@@ -4,7 +4,7 @@
 <div>
     <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
         <div class="block mb-8">
-            <a href="#" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Doctor</a>
+            <a href="{{ route('doctor.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Doctor</a>
         </div>
         
         <!---Table--->
@@ -41,31 +41,31 @@
                             <tbody class="bg-white divide-y divide-gray-200">
                                 @foreach ($doctors as $doctor)
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
                                             {{ $doctor->name }}
                                         </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
                                             {{ $doctor->sex }}
                                         </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
                                             {{ $doctor->dob }}
                                         </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
                                             {{ $doctor->position }}
                                         </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
                                             {{ $doctor->email }}
                                         </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
                                             {{ $doctor->phone }}
                                         </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
                                             <a href="{{ route('doctor.show', $doctor) }}" class="text-green-600 hover:text-green-900 mb-2 mr-2">View</a>
                                             <a href="#" class="text-blue-600 hover:text-blue-900 mb-2 mr-2">Edit</a>
                                             <form class="inline-block" action="{{ route('doctor.destroy', $doctor) }}" method="POST">

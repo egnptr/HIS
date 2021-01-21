@@ -16,6 +16,11 @@ class PatientController extends Controller
         ]);
     }
 
+    public function create()
+    {
+        return view('patient.create');
+    }
+
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -30,7 +35,7 @@ class PatientController extends Controller
 
         Patient::create([
             'name' => $request->name,
-            'nokta' => $request->nokta,
+            'nik' => $request->nik,
             'sex' => $request->sex,
             'dob' => $request->dob,
             'email' => $request->email,
@@ -38,7 +43,7 @@ class PatientController extends Controller
             'address' => $request->address,
         ]);
 
-        return back();
+        return redirect()->route('patient');
     }
 
     public function show($id)

@@ -16,13 +16,13 @@ class CreateDoctorsTable extends Migration
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('nokta');
-            $table->string('sex');
+            $table->bigInteger('nokta');
+            $table->char('sex');
             $table->date('dob');
             $table->string('position');
             $table->string('education');
             $table->string('email')->unique();
-            $table->integer('phone');
+            $table->bigInteger('phone');
             $table->timestamps();
         });
     }

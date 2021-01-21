@@ -59,7 +59,7 @@
             </div>
 
             <div class="flex p-6">
-                <a href="{{ route('doctor') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Back to list</a>
+                <a href="{{ route('patient') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Back to list</a>
             </div>
 
         </div>

@@ -16,11 +16,25 @@ class DoctorController extends Controller
         ]);
     }
 
+    public function show($id)
+    {
+        $doctor = Doctor::findOrFail($id);
+
+        return view('doctor.show', [
+            'doctor' => $doctor
+        ]);
+    }
+
+    public function create()
+    {
+        return view('doctor.create');
+    }
+
     public function store(Request $request)
     {
         $this->validate($request, [
             'name' => 'required|max:255',
-            'nokta' => 'required|max:15',
+            'nokta' => 'required',
             'sex' => 'required|max:1',
             'dob' => 'required',
             'position' => 'required',
@@ -40,16 +54,7 @@ class DoctorController extends Controller
             'phone' => $request->phone,
         ]);
 
-        return back();
-    }
-
-    public function show($id)
-    {
-        $doctor = Doctor::findOrFail($id);
-
-        return view('doctor.show', [
-            'doctor' => $doctor
-        ]);
+        return redirect()->route('doctor');
     }
 
     public function destroy($id)
