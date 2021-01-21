@@ -5,16 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Doctor extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'body'
+        'name',
+        'nokta',
+        'sex',
+        'dob',
+        'position',
+        'education',
+        'email',
+        'phone',
     ];
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 }

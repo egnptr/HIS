@@ -15,9 +15,14 @@
                 <li>
                     <a href="{{ route('dashboard') }}" class="p-3">Dashboard</a>
                 </li>
-                <li>
-                    <a href="{{ route('posts') }}" class="p-3">Posts</a>
-                </li>
+                @auth
+                    <li>
+                        <a href="{{ route('doctor') }}" class="p-3">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('patient') }}" class="p-3">Patients</a>
+                    </li>
+                @endauth
             </ul>
 
             <ul class="flex items-center">
