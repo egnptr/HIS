@@ -21,6 +21,30 @@ class PatientController extends Controller
         return view('patient.create');
     }
 
+    public function edit($id)
+    {
+        return view('patient.edit', [
+            'patient' => Patient::findOrFail($id)
+        ]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $patient = Patient::findOrFail($id);
+
+        $patient->update([
+            'name' => $request->name,
+            'nik' => $request->nik,
+            'sex' => $request->sex,
+            'dob' => $request->dob,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'address' => $request->address,
+        ]);
+
+        return redirect()->route('patient');
+    }
+
     public function store(Request $request)
     {
         $this->validate($request, [

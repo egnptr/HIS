@@ -30,6 +30,31 @@ class DoctorController extends Controller
         return view('doctor.create');
     }
 
+    public function edit($id)
+    {
+        return view('doctor.edit', [
+            'doctor' => Doctor::findOrFail($id)
+        ]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $doctor = Doctor::findOrFail($id);
+
+        $doctor->update([
+            'name' => $request->name,
+            'nokta' => $request->nokta,
+            'sex' => $request->sex,
+            'dob' => $request->dob,
+            'position' => $request->position,
+            'education' => $request->education,
+            'email' => $request->email,
+            'phone' => $request->phone,
+        ]);
+
+        return redirect()->route('doctor');
+    }
+
     public function store(Request $request)
     {
         $this->validate($request, [

@@ -58,7 +58,7 @@
 
                                         <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
                                             <a href="{{ route('patient.show', $patient) }}" class="text-green-600 hover:text-green-900 mb-2 mr-2">View</a>
-                                            <a href="#" class="text-blue-600 hover:text-blue-900 mb-2 mr-2">Edit</a>
+                                            <a href="{{ route('patient.edit', $patient) }}" class="text-blue-600 hover:text-blue-900 mb-2 mr-2">Edit</a>
                                             <form class="inline-block" action="{{ route('patient.destroy', $patient) }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
