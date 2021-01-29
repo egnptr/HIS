@@ -73,8 +73,8 @@
                 </div>
 
                 <div class="bg-white sm:p-6">
-                    <label for="position" class="block text-xs font-semibold text-gray-600 uppercase">Position</label>
-                    <input id="position" type="text" name="position" placeholder="Enter position..."
+                    <label for="position" class="block text-xs font-semibold text-gray-600 uppercase">Department</label>
+                    <input id="position" type="text" name="position" placeholder="Enter department..."
                         class="block w-full py-3 px-1 mt-2 
                         text-gray-800 appearance-none 
                         border-b-2 border-gray-100

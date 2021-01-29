@@ -33,7 +33,7 @@
                     <li>
                         <form action="{{ route('logout') }}" method="post" class="p-3 inline">
                             @csrf
-                            <button type="submit">Logout</button>
+                            <button type="submit" class="rounded-full py-2 px-4 text-gray-100 bg-gray-600 hover:bg-gray-700 focus:outline-none">Logout</button>
                         </form>
                     </li>
                 @endauth
@@ -43,7 +43,7 @@
                         <a href="{{ route('login') }}" class="p-3">Login</a>
                     </li>
                     <li>
-                        <a href="{{ route('register') }}" class="p-3">Register</a>
+                        <a href="{{ route('register') }}" class="rounded-full py-2 px-4 text-gray-100 bg-gray-600 hover:bg-gray-700 focus:outline-none">Register</a>
                     </li>
                 @endguest
             </ul>
