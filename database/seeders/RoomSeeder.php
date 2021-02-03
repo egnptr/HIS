@@ -20,16 +20,20 @@ class RoomSeeder extends Seeder
                 'room_name'      => 'VIP Room',
                 'total_bed'      => '1',
                 'bed_used'       => '0',
-                'status'         => 'Vacant',
+                'status'         => 'Available',
                 'cost'           => 10000000,
+                'created_at'     => '2021-01-24 14:00:11',
+                'updated_at'     => '2021-01-24 14:00:11',
             ],
             [
                 'id'             => 2,
                 'room_name'      => 'Platinum Room',
                 'total_bed'      => '5',
                 'bed_used'       => '0',
-                'status'         => 'Vacant',
+                'status'         => 'Available',
                 'cost'           => 8000000,
+                'created_at'     => '2021-01-24 14:00:11',
+                'updated_at'     => '2021-01-24 14:00:11',
             ],
             [
                 'id'             => 3,
@@ -38,6 +42,8 @@ class RoomSeeder extends Seeder
                 'bed_used'       => '10',
                 'status'         => 'Not Available',
                 'cost'           => 5000000,
+                'created_at'     => '2021-01-24 14:00:11',
+                'updated_at'     => '2021-01-24 14:00:11',
             ],
             [
                 'id'             => 4,
@@ -46,6 +52,8 @@ class RoomSeeder extends Seeder
                 'bed_used'       => '13',
                 'status'         => 'Available',
                 'cost'           => 3000000,
+                'created_at'     => '2021-01-24 14:00:11',
+                'updated_at'     => '2021-01-24 14:00:11',
             ],
             [
                 'id'             => 5,
@@ -54,6 +62,8 @@ class RoomSeeder extends Seeder
                 'bed_used'       => '8',
                 'status'         => 'Available',
                 'cost'           => 1000000,
+                'created_at'     => '2021-01-24 14:00:11',
+                'updated_at'     => '2021-01-24 14:00:11',
             ],
         ];
 

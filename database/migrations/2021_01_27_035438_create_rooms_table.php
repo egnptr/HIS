@@ -20,6 +20,7 @@ class CreateRoomsTable extends Migration
             $table->integer('bed_used');
             $table->string('status');
             $table->integer('cost');
+            $table->timestamps();
         });
     }
 

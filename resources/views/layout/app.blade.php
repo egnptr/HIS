@@ -22,6 +22,9 @@
                     <li>
                         <a href="{{ route('patient') }}" class="p-3">Patients</a>
                     </li>
+                    <li>
+                        <a href="{{ route('room') }}" class="p-3">Rooms</a>
+                    </li>
                 @endauth
             </ul>
 

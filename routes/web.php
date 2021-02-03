@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,6 +46,11 @@ Route::get('/patient/create', [PatientController::class, 'create'])->name('patie
 Route::get('/patient/{id}', [PatientController::class, 'show'])->name('patient.show');
 Route::get('/patient/{id}/edit', [PatientController::class, 'edit'])->name('patient.edit');
 Route::delete('/patient/{id}', [PatientController::class, 'destroy'])->name('patient.destroy');
+
+Route::get('/room', [RoomController::class, 'index'])
+    ->name('room')
+    ->middleware('auth');
+Route::post('/room/{id}/edit', [RoomController::class, 'update'])->name('room.update');
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
