@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMedicalReceiptsTable extends Migration
+class CreateReceiptsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateMedicalReceiptsTable extends Migration
      */
     public function up()
     {
-        Schema::create('medical_receipt', function (Blueprint $table) {
+        Schema::create('receipts', function (Blueprint $table) {
             $table->id();
             $table->string('patient_name');
             $table->string('doctor_name');
@@ -27,6 +27,7 @@ class CreateMedicalReceiptsTable extends Migration
             $table->integer('radiology_cost');
             $table->integer('maintenance_cost');
             $table->integer('total_cost');
+            $table->boolean('paid_off')->default('0');
             $table->timestamps();
         });
     }

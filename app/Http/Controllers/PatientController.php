@@ -9,7 +9,7 @@ class PatientController extends Controller
 {
     public function index()
     {
-        $patients = Patient::latest()->paginate(20);
+        $patients = Patient::latest()->paginate(10);
 
         return view('patient.index', [
             'patients' => $patients
@@ -57,15 +57,18 @@ class PatientController extends Controller
             'address' => 'required',
         ]);
 
-        Patient::create([
-            'name' => $request->name,
-            'nik' => $request->nik,
-            'sex' => $request->sex,
-            'dob' => $request->dob,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'address' => $request->address,
-        ]);
+        // Patient::create([
+        //     'name' => $request->name,
+        //     'nik' => $request->nik,
+        //     'sex' => $request->sex,
+        //     'dob' => $request->dob,
+        //     'email' => $request->email,
+        //     'phone' => $request->phone,
+        //     'address' => $request->address,
+        // ]);
+
+        Patient::create($request->all());
+
 
         return redirect()->route('patient');
     }

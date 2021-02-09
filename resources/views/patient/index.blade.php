@@ -70,10 +70,11 @@
                             </tbody>
                         </table>
                     </div>
+                    {{ $patients->links() }}
                 </div>
             </div>
         </div>
-
+        
     </div>
 </div>
 @endsection

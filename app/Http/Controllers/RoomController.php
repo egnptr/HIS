@@ -28,4 +28,12 @@ class RoomController extends Controller
 
         return redirect()->route('room');
     }
+
+    public function getcost(Request $request)
+    {
+        $data = $request->all();
+        $rooms = Room::where('room_name', '=', $data)->get('cost');
+
+        return response()->json($rooms, 200);
+    }
 }

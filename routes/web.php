@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\ReceiptController;
 use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,37 +28,46 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
     ->name('dashboard')
     ->middleware('auth');
 
-Route::get('/doctor', [DoctorController::class, 'index'])
-    ->name('doctor')
-    ->middleware('auth');
-Route::post('/doctor/create', [DoctorController::class, 'store']);
-Route::post('/doctor/{id}/edit', [DoctorController::class, 'update']);
-Route::get('/doctor/create', [DoctorController::class, 'create'])->name('doctor.create');
-Route::get('/doctor/{id}', [DoctorController::class, 'show'])->name('doctor.show');
-Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('doctor.edit');
-Route::delete('/doctor/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy');
+Route::group(['middleware' => 'auth', 'prefix' => 'doctor'], function () {
+    Route::get('/', [DoctorController::class, 'index'])->name('doctor');
+    Route::post('/create', [DoctorController::class, 'store']);
+    Route::post('/{id}/edit', [DoctorController::class, 'update']);
+    Route::get('/create', [DoctorController::class, 'create'])->name('doctor.create');
+    Route::get('/{id}', [DoctorController::class, 'show'])->name('doctor.show');
+    Route::get('/{id}/edit', [DoctorController::class, 'edit'])->name('doctor.edit');
+    Route::delete('/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy'); 
+});
 
-Route::get('/patient', [PatientController::class, 'index'])
-    ->name('patient')
-    ->middleware('auth');
-Route::post('/patient/create', [PatientController::class, 'store']);
-Route::post('/patient/{id}/edit', [PatientController::class, 'update']);
-Route::get('/patient/create', [PatientController::class, 'create'])->name('patient.create');
-Route::get('/patient/{id}', [PatientController::class, 'show'])->name('patient.show');
-Route::get('/patient/{id}/edit', [PatientController::class, 'edit'])->name('patient.edit');
-Route::delete('/patient/{id}', [PatientController::class, 'destroy'])->name('patient.destroy');
+Route::group(['middleware' => 'auth', 'prefix' => 'patient'], function () {
+    Route::get('/', [PatientController::class, 'index'])->name('patient');
+    Route::post('/create', [PatientController::class, 'store']);
+    Route::post('/{id}/edit', [PatientController::class, 'update']);
+    Route::get('/create', [PatientController::class, 'create'])->name('patient.create');
+    Route::get('/{id}', [PatientController::class, 'show'])->name('patient.show');
+    Route::get('/{id}/edit', [PatientController::class, 'edit'])->name('patient.edit');
+    Route::delete('/{id}', [PatientController::class, 'destroy'])->name('patient.destroy');
+});
 
-Route::get('/room', [RoomController::class, 'index'])
-    ->name('room')
-    ->middleware('auth');
-Route::post('/room/{id}/edit', [RoomController::class, 'update'])->name('room.update');
+Route::group(['middleware' => 'auth', 'prefix' => 'room'], function () {
+    Route::get('/', [RoomController::class, 'index'])->name('room');
+    Route::get('/cost', [RoomController::class, 'getcost'])->name('room.getcost');
+    Route::post('/{id}/edit', [RoomController::class, 'update'])->name('room.update');
+});
+
+Route::group(['middleware' => 'auth', 'prefix' => 'receipt'], function () {
+    Route::get('/', [ReceiptController::class, 'index'])->name('receipt');
+    Route::post('/create', [ReceiptController::class, 'store']);
+    Route::post('/{id}/edit', [ReceiptController::class, 'update']);
+    Route::get('/create', [ReceiptController::class, 'create'])->name('receipt.create');
+    Route::get('/{id}', [ReceiptController::class, 'show'])->name('receipt.show');
+    Route::get('/{id}/edit', [ReceiptController::class, 'edit'])->name('receipt.edit');
+    Route::delete('/{id}', [ReceiptController::class, 'destroy'])->name('receipt.destroy');
+});
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'store']);
 
-Route::get('/register', [RegisterController::class, 'index'])
-    ->name('register')
-    ->middleware('guest');
+Route::get('/register', [RegisterController::class, 'index'])->name('register')->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);

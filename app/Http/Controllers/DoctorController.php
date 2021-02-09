@@ -9,7 +9,7 @@ class DoctorController extends Controller
 {
     public function index()
     {
-        $doctors = Doctor::latest()->paginate(20);
+        $doctors = Doctor::latest()->paginate(10);
 
         return view('doctor.index', [
             'doctors' => $doctors
@@ -68,16 +68,18 @@ class DoctorController extends Controller
             'phone' => 'required|max:15',
         ]);
 
-        Doctor::create([
-            'name' => $request->name,
-            'nokta' => $request->nokta,
-            'sex' => $request->sex,
-            'dob' => $request->dob,
-            'position' => $request->position,
-            'education' => $request->education,
-            'email' => $request->email,
-            'phone' => $request->phone,
-        ]);
+        // Doctor::create([
+        //     'name' => $request->name,
+        //     'nokta' => $request->nokta,
+        //     'sex' => $request->sex,
+        //     'dob' => $request->dob,
+        //     'position' => $request->position,
+        //     'education' => $request->education,
+        //     'email' => $request->email,
+        //     'phone' => $request->phone,
+        // ]);
+
+        Doctor::create($request->all());
 
         return redirect()->route('doctor');
     }
