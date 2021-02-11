@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ReceiptController;
 use App\Http\Controllers\RoomController;
@@ -26,6 +27,10 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [DashboardController::class, 'index'])
     ->name('dashboard')
+    ->middleware('auth');
+
+Route::get('/facility', [FacilityController::class, 'index'])
+    ->name('facility')
     ->middleware('auth');
 
 Route::group(['middleware' => 'auth', 'prefix' => 'doctor'], function () {

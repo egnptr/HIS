@@ -269,7 +269,7 @@
         });
     });
 
-    function getDay() {
+    function day() {
         var checkout = new Date(document.getElementById("date_out").value);
         var checkin = new Date(document.getElementById("date_in").value);
         return parseInt((checkout - checkin) / (24 * 3600 * 1000));
@@ -277,7 +277,7 @@
 
     function cal() {
         if (document.getElementById("date_out")) {
-            document.getElementById("days").value = getDay();
+            document.getElementById("days").value = day();
         }
     }
 

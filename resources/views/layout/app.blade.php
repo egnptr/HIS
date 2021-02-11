@@ -17,6 +17,9 @@
                 </li>
                 @auth
                     <li>
+                        <a href="{{ route('facility') }}" class="p-3">Facility</a>
+                    </li>
+                    <li>
                         <a href="{{ route('doctor') }}" class="p-3">Doctors</a>
                     </li>
                     <li>
