@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\ConsultingRoomController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\FacilityController;
@@ -57,6 +58,12 @@ Route::group(['middleware' => 'auth', 'prefix' => 'room'], function () {
     Route::get('/', [RoomController::class, 'index'])->name('room');
     Route::get('/cost', [RoomController::class, 'getcost'])->name('room.getcost');
     Route::post('/{id}/edit', [RoomController::class, 'update'])->name('room.update');
+});
+
+Route::group(['middleware' => 'auth', 'prefix' => 'consulting'], function () {
+    Route::get('/', [ConsultingRoomController::class, 'index'])->name('consulting');
+    Route::get('/{id}/edit', [ConsultingRoomController::class, 'edit'])->name('consulting.edit');
+    Route::post('/{id}/edit', [ConsultingRoomController::class, 'update']);
 });
 
 Route::group(['middleware' => 'auth', 'prefix' => 'receipt'], function () {

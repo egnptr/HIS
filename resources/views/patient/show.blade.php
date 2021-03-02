@@ -5,7 +5,8 @@
         <div class="w-8/12">
             <div class="p-6">
                 <h1 class="text-2xl font-semibold mb-1">{{ $patient->name }}</h1>
-                <span class="bg-indigo-500 text-white font-bold py-1 px-4 rounded">NIK: {{ $patient->nik }}</span>
+                <span class="bg-indigo-500 text-white font-bold py-1 px-4 rounded">PIN: {{ $patient->pin }}</span>
+                <span class="bg-indigo-500 text-white font-bold py-1 px-4 rounded">CIN: {{ $patient->cin }}</span>
             </div>
             
             <div class="bg-white p-6 rounded-lg">

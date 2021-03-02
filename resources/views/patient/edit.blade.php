@@ -29,15 +29,31 @@
                 </div>
 
                 <div class="bg-white sm:p-6">
-                    <label for="nik" class="block text-xs font-semibold text-gray-600 uppercase">NIK</label>
-                    <input id="nik" type="number" name="nik" placeholder="Enter NIK..."
+                    <label for="pin" class="block text-xs font-semibold text-gray-600 uppercase">Patient Indentification Number (PIN)</label>
+                    <input id="pin" type="number" name="pin" placeholder="Enter PIN..."
                         class="block w-full py-3 px-1 mt-2 
                         text-gray-800 appearance-none 
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                        value="{{ $patient->nik }}"
+                        value="{{ $patient->pin }}"
                         />
-                    @error('nik')
+                    @error('pin')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+
+                <div class="bg-white sm:p-6">
+                    <label for="cin" class="block text-xs font-semibold text-gray-600 uppercase">Case Indentification Number (CIN)</label>
+                    <input id="cin" type="number" name="cin" placeholder="Enter CIN..."
+                        class="block w-full py-3 px-1 mt-2 
+                        text-gray-800 appearance-none 
+                        border-b-2 border-gray-100
+                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                        value="{{ $patient->cin }}"
+                        />
+                    @error('cin')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}
                         </div>
@@ -46,13 +62,13 @@
 
                 <div class="bg-white sm:p-6">
                     <label for="sex" class="block text-xs font-semibold text-gray-600 uppercase">Sex</label>
-                    <input id="sex" type="text" name="sex" placeholder="M / F"
-                        class="block w-full py-3 px-1 mt-2 
+                    <select id="sex" name="sex" class="block w-full py-3 px-1 mt-2 
                         text-gray-800 appearance-none 
-                        border-b-2 border-gray-100
-                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                        value="{{ $patient->sex }}"
-                        />
+                        border-b-2 border-gray-100">
+                        <option value="{{ $patient->sex }}" selected require>{{ $patient->sex }}</option>
+                        <option value="M">M</option>
+                        <option value="F">F</option>
+                    </select>
                     @error('sex')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}

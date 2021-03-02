@@ -17,13 +17,13 @@
                 <div class="card bg-white shadow h-auto w-auto rounded-2xl overflow-hidden relative">
                     <h1 class="shadow-md text-l font-bold text-center text-gray-600 uppercase p-3">Consulting Room</h1>
                     <img class="py-11 transform scale-150" src="{{ asset('img/consulting.jpg') }}" alt="" />
-                    <button class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
+                    <button onclick="location.href='{{ route('consulting') }}'" class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
                 </div>
                 
                 <div class="card bg-white shadow h-auto w-auto rounded-2xl overflow-hidden relative">
                     <h1 class="shadow-md text-l font-bold text-center text-gray-600 uppercase p-3">Operating Theater</h1>
                     <img class="py-6 transform scale-125" src="{{ asset('img/operating.jpg') }}" alt="" />
-                    <button class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
+                    <button onclick="location.href='{{ route('room') }}'" class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
                 </div>
             </div>
         </div>
