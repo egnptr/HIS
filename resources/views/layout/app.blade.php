@@ -15,23 +15,9 @@
                 <li>
                     <a href="{{ route('dashboard') }}" class="p-3">Dashboard</a>
                 </li>
-                @auth
-                    <li>
-                        <a href="{{ route('facility') }}" class="p-3">Facility</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('doctor') }}" class="p-3">Doctors</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('patient') }}" class="p-3">Patients</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('room') }}" class="p-3">Rooms</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('receipt') }}" class="p-3">Check Out</a>
-                    </li>
-                @endauth
+                <li>
+                    <a href="{{ route('facility') }}" class="p-3">Facility</a>
+                </li>
             </ul>
 
             <ul class="flex items-center">
