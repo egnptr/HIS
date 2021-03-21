@@ -60,6 +60,22 @@
                     @enderror
                 </div>
 
+                <div class="mb-4">
+                    <select name="role_id" class="bg-gray-100 border-2 w-full p-4 rounded-lg">
+                        <option value="" selected required>Register as</option>
+                        <option value="1">Administrator</option>
+                        <option value="2">Doctor</option>
+                        <option value="3">Nurse</option>
+                        <option value="4">Staff</option>
+                    </select>
+
+                    @error('role_id')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+
                 <div>
                     <button type="submit" class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Register</button>
                 </div>

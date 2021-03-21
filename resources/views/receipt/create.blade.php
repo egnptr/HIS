@@ -3,8 +3,8 @@
 @section('content')
 <div class="flex flex-col h-screen">
     <div class="grid place-items-center mx-2 my-20 sm:my-auto">
-        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 
-        px-6 py-10 sm:px-10 sm:py-6 
+        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12
+        px-6 py-10 sm:px-10 sm:py-6
         bg-white rounded-lg shadow-md lg:shadow-lg">
             <h2 class="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
                 Create Receipt
@@ -14,8 +14,8 @@
                 @csrf
                 <div class="bg-white sm:p-6">
                     <label for="patient_name" class="block text-xs font-semibold text-gray-600 uppercase">Patient Name</label>
-                    <select id="patient_name" name="patient_name" class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                    <select id="patient_name" name="patient_name" class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100">
                         <option value="" selected require>Choose a patient</option>
                         @foreach ($patients as $patient)
@@ -33,8 +33,8 @@
 
                 <div class="bg-white sm:p-6">
                     <label for="doctor_name" class="block text-xs font-semibold text-gray-600 uppercase">Doctor Name</label>
-                    <select id="doctor_name" name="doctor_name" class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                    <select id="doctor_name" name="doctor_name" class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100">
                         <option value="" selected require>Choose a doctor</option>
                         @foreach ($doctors as $doctor)
@@ -53,8 +53,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="date_in" class="block text-xs font-semibold text-gray-600 uppercase">Date In</label>
                     <input id="date_in" type="date" name="date_in"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         onchange="cal()"
@@ -69,8 +69,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="date_out" class="block text-xs font-semibold text-gray-600 uppercase">Date Out</label>
                     <input id="date_out" type="date" name="date_out"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         onchange="cal()"
@@ -87,7 +87,7 @@
                 <div class="bg-white sm:p-6">
                     <label for="room_type" class="block text-xs font-semibold text-gray-600 uppercase">Room Type</label>
                     <select id="room_type" name="room_type" class="block w-full py-3 px-1 mt-2
-                        text-gray-800 appearance-none 
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100">
                         <option value="" selected require>Choose a room</option>
                         @foreach ($rooms as $room)
@@ -106,8 +106,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="room_fee" class="block text-xs font-semibold text-gray-600 uppercase">Room Fee</label>
                     <input id="room_fee" type="number" name="room_fee"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -123,8 +123,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="medicine_cost" class="block text-xs font-semibold text-gray-600 uppercase">Medicine Cost</label>
                     <input id="medicine_cost" type="number" name="medicine_cost"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -140,8 +140,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="consumption_cost" class="block text-xs font-semibold text-gray-600 uppercase">Consumption Cost</label>
                     <input id="consumption_cost" type="number" name="consumption_cost"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -157,8 +157,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="lab_cost" class="block text-xs font-semibold text-gray-600 uppercase">Lab Cost</label>
                     <input id="lab_cost" type="number" name="lab_cost"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -174,8 +174,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="radiology_cost" class="block text-xs font-semibold text-gray-600 uppercase">Radiology Cost</label>
                     <input id="radiology_cost" type="number" name="radiology_cost"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -191,8 +191,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="room_cost" class="block text-xs font-semibold text-gray-600 uppercase">Room Cost</label>
                     <input id="room_cost" type="number" name="room_cost"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -206,10 +206,10 @@
                 </div>
 
                 <div class="bg-white sm:p-6">
-                    <label for="maintenance_cost" class="block text-xs font-semibold text-gray-600 uppercase">Maintenance Cost</label>
+                    <label for="maintenance_cost" class="block text-xs font-semibold text-gray-600 uppercase">Service Cost</label>
                     <input id="maintenance_cost" type="number" name="maintenance_cost"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -225,8 +225,8 @@
                 <div class="bg-white sm:p-6">
                     <label for="total_cost" class="block text-xs font-semibold text-gray-600 uppercase">Total Cost</label>
                     <input id="total_cost" type="number" name="total_cost"
-                        class="block w-full py-3 px-1 mt-2 
-                        text-gray-800 appearance-none 
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
                         value="0"
@@ -262,8 +262,8 @@
             dataType: 'json',
             success: function(data) {
                 $("#room_fee").val(data[0].cost);
-            }, 
-            error: function(err) { 
+            },
+            error: function(err) {
                 console.log(err);
             }
         });

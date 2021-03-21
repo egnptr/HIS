@@ -22,11 +22,14 @@ class RegisterController extends Controller
             'password' => 'required|confirmed',
         ]);
 
+        //dd($request);
+
         User::create([
             'name' => $request->name,
             'username' => $request->username,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'role_id' => $request->role_id,
         ]);
 
         auth()->attempt($request->only('email', 'password'));
