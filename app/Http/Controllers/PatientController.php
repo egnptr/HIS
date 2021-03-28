@@ -34,7 +34,6 @@ class PatientController extends Controller
 
         $patient->update([
             'name' => $request->name,
-            'pin' => $request->pin,
             'cin' => $request->cin,
             'sex' => $request->sex,
             'dob' => $request->dob,
@@ -50,7 +49,6 @@ class PatientController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|max:255',
-            'pin' => 'required|max:20',
             'cin' => 'required|max:20',
             'sex' => 'required|max:1',
             'dob' => 'required',
@@ -58,16 +56,6 @@ class PatientController extends Controller
             'phone' => 'required|max:15',
             'address' => 'required',
         ]);
-
-        // Patient::create([
-        //     'name' => $request->name,
-        //     'nik' => $request->nik,
-        //     'sex' => $request->sex,
-        //     'dob' => $request->dob,
-        //     'email' => $request->email,
-        //     'phone' => $request->phone,
-        //     'address' => $request->address,
-        // ]);
 
         Patient::create($request->all());
 

@@ -7,9 +7,11 @@ use App\Http\Controllers\ConsultingRoomController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\FacilityController;
+use App\Http\Controllers\InpatientController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ReceiptController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\ScheduleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +36,10 @@ Route::get('/facility', [FacilityController::class, 'index'])
     ->name('facility')
     ->middleware('auth');
 
+Route::get('/schedule', [ScheduleController::class, 'index'])
+    ->name('schedule')
+    ->middleware('auth');
+
 Route::group(['middleware' => 'auth', 'prefix' => 'doctor'], function () {
     Route::get('/', [DoctorController::class, 'index'])->name('doctor');
     Route::post('/create', [DoctorController::class, 'store']);
@@ -41,7 +47,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'doctor'], function () {
     Route::get('/create', [DoctorController::class, 'create'])->name('doctor.create');
     Route::get('/{id}', [DoctorController::class, 'show'])->name('doctor.show');
     Route::get('/{id}/edit', [DoctorController::class, 'edit'])->name('doctor.edit');
-    Route::delete('/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy'); 
+    Route::delete('/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy');
 });
 
 Route::group(['middleware' => 'auth', 'prefix' => 'patient'], function () {
@@ -83,3 +89,67 @@ Route::post('/login', [LoginController::class, 'store']);
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register')->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
+
+
+Route::group(['middleware' => 'auth'], function () {
+    /* ------------------- Inpatient --------------------- */
+    Route::get('/inpatient', [InpatientController::class, 'index'])
+    ->name('homeInpatient');
+    Route::get('/inpatient/dashboard', [InpatientController::class, 'dashboard'])
+    ->name('inpatientPatient');
+
+    /* ------------------- Out-patient --------------------- */
+    Route::get('/outpatient', function() {
+        return view('outpatient.welcome');
+    })->name('outpatient');
+
+    Route::get('/outpatient/referral', function() {
+        return view('inpatient.referral');
+    });
+
+    /* ------------------- operating_theatre --------------------- */
+    Route::get('/operating_theatre', function() {
+        return view('operating_theatre.index');
+    })->name('operating');
+
+    Route::get('/operating_theatre/about', function() {
+        return view('operating_theatre.about');
+    });
+
+    Route::get('/operating_theatre/dokter', function() {
+        return view('operating_theatre.dokter');
+    });
+
+    Route::get('/operating_theatre/consultation', function() {
+        return view('operating_theatre.consultation');
+    });
+
+    /* ------------------- Bridging --------------------- */
+
+    Route::get('/api', function() {
+        return view('api.home');
+    })->name('api');
+
+    Route::get('/api/page', function() {
+        return view('api.apipage');
+    });
+
+    /* ------------------- Laboratory --------------------- */
+
+
+    Route::get('/radiologi_lab', function () {
+        return view('radiologi_lab.home1');
+    })->name('radiologilab');
+
+    Route::get('/radiologi_lab/form', function () {
+        return view('radiologi_lab.form');
+    });
+
+    Route::get('/radiologi_lab/formradiologi', function () {
+        return view('radiologi_lab.formradiologi');
+    });
+
+    Route::get('/radiologi_lab/formlab', function () {
+        return view('radiologi_lab.formlab');
+    });
+});
