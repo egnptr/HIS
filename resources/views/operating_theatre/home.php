@@ -44,7 +44,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/img/operating_theatre/dokter2.jpg" alt="First slide">
+      <img class="d-block w-100" src="/img/operating_theatre/beranda11.png" alt="First slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/img/operating_theatre/operasi1.jpg" alt="Second slide">

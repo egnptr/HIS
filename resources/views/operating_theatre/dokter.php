@@ -22,16 +22,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-			<a class="nav-link" href="/Operating_Theatre">Beranda </a>
+			<a class="nav-link" href="/operating_theatre">Beranda </a>
       </li>
       <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/dokter">Cari Dokter</a>
+			<a class="nav-link" href="/operating_theatre/dokter">Cari Dokter</a>
       </li>
 	    <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/about">Tentang Kami</a>
+			<a class="nav-link" href="/operating_theatre/about">Tentang Kami</a>
       </li>
       	  <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/consultation">Consultation</a>
+			<a class="nav-link" href="/operating_theatre/consultation">Consultation</a>
       </li>
     </ul>
   </div>

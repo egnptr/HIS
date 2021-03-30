@@ -136,7 +136,6 @@ Route::group(['middleware' => 'auth'], function () {
 
     /* ------------------- Laboratory --------------------- */
 
-
     Route::get('/radiologi_lab', function () {
         return view('radiologi_lab.home1');
     })->name('radiologilab');
@@ -152,4 +151,33 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/radiologi_lab/formlab', function () {
         return view('radiologi_lab.formlab');
     });
+    
+    Route::get('/radiologi_lab/paylab', function () {
+    return view('radiologi_lab.paylab');
+    });
+
+    Route::get('/radiologi_lab/ambil', function () {
+    return view('radiologi_lab.ambil');
+    });
+    
+    Route::get('/radiologi_lab/layanan', function () {
+    return view('radiologi_lab.layanan');
+    });
+    
+    /* ------------------- Pharmacy --------------------- */
+    Route::get('/pharmacy', function() {
+        return view('pharmacy.home');
+    })->name('pharmacy');
+    
+    Route::get('order', 'App\Http\Controllers\MedicineController@orderdata');
+    
+    Route::get('order/addmedicine', 'App\Http\Controllers\MedicineController@addmedicine');
 });
+
+
+
+        
+    
+
+
+    

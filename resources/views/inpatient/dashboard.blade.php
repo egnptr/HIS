@@ -1,19 +1,15 @@
-@extends('inpatient/layout/main')
+@extends('layout/app')
 
-@section('title', 'Inpatient - Dashboard')
-
-@section('navbar-nav')
-    <li class="nav-item mx-2">
-        <a class="nav-link" href="/inpatient">Home</a>
-    </li>
-    <li class="nav-item mx-2">
-        <a class="nav-link active" aria-current="page">Dashboard</a>
-    </li>
+@section('title')
+<title>Inpatient - Patient List</title>
 @endsection
 
-@section('container')
-<div class="container">
+@section('content')
+<div>
     <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
+        <div class="px-6 py-4 bg-white border-b border-gray-200 font-bold uppercase">
+            Inpatient's Patient List
+        </div>
         <div class="flex flex-col">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -72,7 +68,6 @@
                             </tbody>
                         </table>
                     </div>
-                    {{ $patients->links() }}
                 </div>
             </div>
         </div>

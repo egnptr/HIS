@@ -22,16 +22,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-			<a class="nav-link" href="/Operating_Theatre">Beranda </a>
+			<a class="nav-link" href="/operating_theatre">Beranda </a>
       </li>
       <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/dokter">Cari Dokter</a>
+			<a class="nav-link" href="/operating_theatre/dokter">Cari Dokter</a>
       </li>
 	    <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/about">Tentang Kami</a>
+			<a class="nav-link" href="/operating_theatre/about">Tentang Kami</a>
       </li>
       	  <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/consultation">Consultation</a>
+			<a class="nav-link" href="/operating_theatre/consultation">Consultation</a>
       </li>
     </ul>
   </div>
@@ -44,7 +44,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/img/operating_theatre/dokter2.jpg" alt="First slide">
+      <img class="d-block w-100" src="/img/operating_theatre/aboutus1.png" alt="First slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/img/operating_theatre/operasi1.jpg" alt="Second slide">
@@ -63,7 +63,7 @@
   </a>
 </div>
    
-   <p  style="text-decoration: none; color: #818a96;">Universitas Pelita Harapan</p>
+   <p  style="text-decoration: none; color: #818a96;">Kami menggunakan dokter yang sangat berpengalaman  terhadap pentingnya dan dampak dari masalah dalam pekerjaan kami.  Kami sering bekerja dengan campuran yang sehat dari profesional perawatan kesehatan dan anggota masyarakat yang tertarik, perwakilan pasien, dan orang-orang yang secara aktif berupaya meningkatkan kualitas mereka yang menerima perawatan kesehatan dan mereka yang mengabdikan diri untuk menyediakannya.</p>
    
    
    

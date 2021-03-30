@@ -22,16 +22,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-			<a class="nav-link" href="/Operating_Theatre">Beranda </a>
+			<a class="nav-link" href="/operating_theatre">Beranda </a>
       </li>
       <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/dokter">Cari Dokter</a>
+			<a class="nav-link" href="/operating_theatre/dokter">Cari Dokter</a>
       </li>
 	    <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/about">Tentang Kami</a>
+			<a class="nav-link" href="/operating_theatre/about">Tentang Kami</a>
       </li>
       	  <li class="nav-item">
-			<a class="nav-link" href="/Operating_Theatre/consultation">Consultation</a>
+			<a class="nav-link" href="/operating_theatre/consultation">Consultation</a>
       </li>
     </ul>
   </div>
@@ -44,7 +44,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/img/operating_theatre/dokter2.jpg" alt="First slide">
+      <img class="d-block w-100" src="/img/operating_theatre/beranda11.png" alt="First slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/img/operating_theatre/operasi1.jpg" alt="Second slide">
@@ -65,7 +65,7 @@
    
    <p  style="text-decoration: none; color: #818a96;">Ruang operasi (juga dikenal sebagai ruang operasi (OR), ruang operasi, atau ruang operasi) adalah fasilitas di dalam rumah sakit tempat operasi bedah dilakukan di lingkungan aseptik.
 
-Secara historis, istilah "ruang operasi" mengacu pada teater atau amfiteater yang tidak steril dan berjenjang di mana siswa dan penonton lainnya dapat menyaksikan ahli bedah melakukan pembedahan. Ruang operasi kontemporer tidak memiliki pengaturan teater, membuat istilah "ruang operasi" menjadi keliru.</p>
+Ruang operasi dirancang dengan faktor keselamatan yang tinggi dan membutuhkan kondisi yang steril dan khusus.  Selain itu luas ruangan juga harus cukup untuk memungkinkan petugas bergerak sekeliling peralatan bedah.</p>
    
    
    

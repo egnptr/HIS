@@ -197,10 +197,10 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/home1">Beranda</a></li>
-        <li><a href="#daftar">Daftar</a></li>
-        <li><a href="#layanan">Layanan</a></li>
-        <li><a href="#ambil">Ambil Hasil</a></li>
+        <li><a href="/radiologi_lab">Beranda</a></li>
+        <li><a href="/radiologi_lab/form">Daftar</a></li>
+        <li><a href="/radiologi_lab/layanan">Layanan</a></li>
+        <li><a href="/radiologi_lab/ambil">Ambil Hasil</a></li>
       </ul>
     </div>
   </div>
@@ -211,8 +211,8 @@
   <div class="row">
     <div class="col-sm-8">
     <h2>Pilih Departemen yang Ingin Kamu Tuju</h2><br>
-    <a button class="btn btn-default btn-lg" href="/formradiologi">Departemen Radiologi</a>
-    <a button class="btn btn-default btn-lg" href="/formlab">Departemen Laboratorium</a>
+    <a button class="btn btn-default btn-lg" href="/radiologi_lab/formradiologi">Departemen Radiologi</a>
+    <a button class="btn btn-default btn-lg" href="/radiologi_lab/formlab">Departemen Laboratorium</a>
       
   </div>
 </div>

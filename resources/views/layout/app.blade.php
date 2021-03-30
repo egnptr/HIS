@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>HIS Project</title>
+    @yield('title')
 </head>
 <body class="bg-keppel-100">
         <nav class="flex flex-wrap items-center justify-between p-4 mb-6 bg-keppel-500">

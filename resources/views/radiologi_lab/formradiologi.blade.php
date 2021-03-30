@@ -197,10 +197,10 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/home1">Beranda</a></li>
-        <li><a href="#daftar">Daftar</a></li>
-        <li><a href="#layanan">Layanan</a></li>
-        <li><a href="#ambil">Ambil Hasil</a></li>
+        <li><a href="/radiologi_lab">Beranda</a></li>
+        <li><a href="/radiologi_lab/form">Daftar</a></li>
+        <li><a href="/radiologi_lab/layanan">Layanan</a></li>
+        <li><a href="/radiologi_lab/ambil">Ambil Hasil</a></li>
       </ul>
     </div>
   </div>
@@ -313,7 +313,7 @@
         
         <div class="form-group row">
           <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Submit</button>
+          <a button type="submit" class="btn btn-primary" href="/paylab">Submit</a>
           </div>
         </div>
 

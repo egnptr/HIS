@@ -197,10 +197,10 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#daftar">Daftar</a></li>
-        <li><a href="#layanan">Layanan</a></li>
-        <li><a href="#ambil">Ambil Hasil</a></li>
+        <li><a href="/radiologi_lab">Beranda</a></li>
+        <li><a href="/radiologi_lab/form">Daftar</a></li>
+        <li><a href="/radiologi_lab/layanan">Layanan</a></li>
+        <li><a href="/radiologi_lab/ambil">Ambil Hasil</a></li>
       </ul>
     </div>
   </div>
