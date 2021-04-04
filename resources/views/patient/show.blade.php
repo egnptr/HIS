@@ -5,8 +5,8 @@
         <div class="w-8/12">
             <div class="p-6">
                 <h1 class="text-2xl font-semibold mb-1">{{ $patient->name }}</h1>
-                <span class="bg-indigo-500 text-white font-bold py-1 px-4 rounded">PIN: {{ $patient->id }}</span>
-                <span class="bg-indigo-500 text-white font-bold py-1 px-4 rounded">CIN: {{ $patient->cin }}</span>
+                <span class="bg-indigo-500 text-white font-bold py-1 px-4 rounded">PIN: HIS01-{{ $patient->dob }}-{{ $patient->ktp }}</span>
+                <span class="bg-indigo-500 text-white font-bold py-1 px-4 rounded">KTP: {{ $patient->ktp }}</span>
             </div>
 
             <div class="bg-white p-6 rounded-lg">
@@ -58,9 +58,10 @@
 
                 </div>
             </div>
-
-            <div class="flex p-6">
-                <a href="{{ route('patient') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Back to list</a>
+            
+            <div class="flex items-center justify-end px-4 py-3 space-x-4 sm:px-6">
+                <a href="{{ route('emr.show', $patient) }}" class="inline-flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View EMR</a>
+                <a href="{{ route('patient') }}" class="inline-flex bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Back to list</a>
             </div>
 
         </div>

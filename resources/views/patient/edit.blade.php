@@ -29,15 +29,15 @@
                 </div>
 
                 <div class="bg-white sm:p-6">
-                    <label for="cin" class="block text-xs font-semibold text-gray-600 uppercase">Case Indentification Number (CIN)</label>
-                    <input id="cin" type="number" name="cin" placeholder="Enter CIN..."
+                    <label for="ktp" class="block text-xs font-semibold text-gray-600 uppercase">KTP</label>
+                    <input id="ktp" type="number" name="ktp" placeholder="Enter KTP..."
                         class="block w-full py-3 px-1 mt-2
                         text-gray-800 appearance-none
                         border-b-2 border-gray-100
                         focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                        value="{{ $patient->cin }}"
+                        value="{{ $patient->ktp }}"
                         />
-                    @error('cin')
+                    @error('ktp')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}
                         </div>

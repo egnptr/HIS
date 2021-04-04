@@ -34,6 +34,7 @@ class PatientController extends Controller
 
         $patient->update([
             'name' => $request->name,
+            'ktp' => $request->ktp,
             'sex' => $request->sex,
             'dob' => $request->dob,
             'email' => $request->email,
@@ -48,6 +49,7 @@ class PatientController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|max:255',
+            'ktp' => 'required',
             'sex' => 'required|max:1',
             'dob' => 'required',
             'email' => 'required|max:255',

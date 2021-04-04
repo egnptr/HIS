@@ -15,10 +15,12 @@ class CreateCinsTable extends Migration
     {
         Schema::create('cins', function (Blueprint $table) {
             $table->id('id_cin');
-            $table->bigInteger('id_patient');
-            $table->bigInteger('id_doctor');
+            $table->foreignId('id_patient');
+            $table->foreignId('id_doctor');
             $table->date('date_in');
             $table->date('date_out');
+            $table->string('group_case');
+            $table->string('case_detail');
             $table->string('type');
             $table->string('status');
             $table->timestamps();

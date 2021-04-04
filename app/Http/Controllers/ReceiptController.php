@@ -83,23 +83,8 @@ class ReceiptController extends Controller
             'lab_cost',
             'radiology_cost',
             'maintenance_cost',
-            'total_cost' => 'required',   
+            'total_cost' => 'required',
         ]);
-
-        // Receipt::create([
-        //     'patient_name' => $request->patient_name,
-        //     'doctor_name'=> $request->doctor_name,
-        //     'date_in' => $request->date_in,
-        //     'date_out' => $request->date_out,
-        //     'room_type' => $request->room_type,
-        //     'room_cost' => $request->room_cost,
-        //     'medicine_cost' => $request->medicine_cost,
-        //     'consumption_cost' => $request->consumption_cost,
-        //     'lab_cost' => $request->lab_cost,
-        //     'radiology_cost' => $request->radiology_cost,
-        //     'maintenance_cost' => $request->maintenance_cost,
-        //     'total_cost' => $request->total_cost,
-        // ]);
 
         Receipt::create($request->all());
 

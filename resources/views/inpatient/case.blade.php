@@ -7,10 +7,13 @@
 @section('content')
 <div>
     <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="px-6 py-4 bg-white border-b border-gray-200 font-bold uppercase">
-            Inpatient's Patient List
+        <div class="py-6 border-b border-gray-200 font-bold uppercase">
+            Inpatient's Case List
         </div>
         <div class="flex flex-col">
+            <div class="block mb-8">
+                <a href="{{ route('inpatient.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Patient</a>
+            </div>
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                     <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
@@ -19,49 +22,49 @@
                                 <tr>
                                     <th
                                         class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                                        Name</th>
+                                        Patient ID</th>
                                     <th
                                         class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                                        Sex</th>
+                                        Doctor ID</th>
                                     <th
                                         class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                                        Date of Birth</th>
+                                        Status</th>
                                     <th
                                         class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                                        Email</th>
+                                        Group Case</th>
                                     <th
                                         class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                                        Phone</th>
+                                        Date In</th>
                                     <th
                                         class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
                                         Action</th>
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
-                                @foreach ($patients as $patient)
+                                @foreach ($cins as $cin)
                                     <tr>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $patient->name }}
+                                            {{ $cin->id_patient }}
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $patient->sex }}
+                                            {{ $cin->id_doctor }}
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $patient->dob }}
+                                            {{ $cin->status }}
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $patient->email }}
+                                            {{ $cin->group_case }}
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $patient->phone }}
+                                            {{ $cin->date_in }}
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                            <a href="{{ route('patient.show', $patient) }}" class="text-green-600 hover:text-green-900 mb-2 mr-2">View</a>
+                                            <a class="text-green-600 hover:text-green-900 mb-2 mr-2">View</a>
                                         </td>
                                     </tr>
                                 @endforeach

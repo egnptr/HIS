@@ -18,6 +18,14 @@
 
                 @can('admin')
                     <div class="card bg-white shadow h-auto w-auto rounded-2xl overflow-hidden relative">
+                        <h1 class="shadow-md text-l font-bold text-center text-gray-600 uppercase p-3">Nurse List</h1>
+                        <img class="py-2 transform scale-110" src="{{ asset('img/doctor.jpeg') }}" alt="" />
+                        <button onclick="location.href='{{ route('nurse') }}'" class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
+                    </div>
+                @endcan
+
+                @can('admin')
+                    <div class="card bg-white shadow h-auto w-auto rounded-2xl overflow-hidden relative">
                         <h1 class="shadow-md text-l font-bold text-center text-gray-600 uppercase p-3">Bridging</h1>
                         <img class="py-2 transform scale-110" src="{{ asset('img/doctor.jpeg') }}" alt="" />
                         <button onclick="location.href='{{ route('api') }}'" class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
@@ -36,7 +44,7 @@
                     <div class="card bg-white shadow h-auto w-auto rounded-2xl overflow-hidden relative">
                         <h1 class="shadow-md text-l font-bold text-center text-gray-600 uppercase p-3">Inpatient</h1>
                         <img class="py-10 transform scale-150" src="{{ asset('img/patient.jpg') }}" alt="" />
-                        <button onclick="location.href='{{ route('homeInpatient') }}'" class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
+                        <button onclick="location.href='{{ route('inpatient') }}'" class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
                     </div>
                 @endcannot
 

@@ -5,17 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Patient extends Model
+class Emr extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'ktp',
-        'sex',
-        'dob',
-        'email',
-        'phone',
-        'address',
+        'blood_pressure',
+        'heart_rate',
+        'blood_sugar'
     ];
 }

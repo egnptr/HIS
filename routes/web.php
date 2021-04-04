@@ -12,6 +12,8 @@ use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ReceiptController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\EmrController;
+use App\Http\Controllers\NurseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +41,9 @@ Route::get('/facility', [FacilityController::class, 'index'])
 Route::get('/schedule', [ScheduleController::class, 'index'])
     ->name('schedule')
     ->middleware('auth');
+Route::get('/schedule/table', [ScheduleController::class, 'table'])
+    ->name('schedule.table')
+    ->middleware('auth');
 
 Route::group(['middleware' => 'auth', 'prefix' => 'doctor'], function () {
     Route::get('/', [DoctorController::class, 'index'])->name('doctor');
@@ -48,6 +53,16 @@ Route::group(['middleware' => 'auth', 'prefix' => 'doctor'], function () {
     Route::get('/{id}', [DoctorController::class, 'show'])->name('doctor.show');
     Route::get('/{id}/edit', [DoctorController::class, 'edit'])->name('doctor.edit');
     Route::delete('/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy');
+});
+
+Route::group(['middleware' => 'auth', 'prefix' => 'nurse'], function () {
+    Route::get('/', [NurseController::class, 'index'])->name('nurse');
+    Route::post('/create', [NurseController::class, 'store']);
+    Route::post('/{id}/edit', [NurseController::class, 'update']);
+    Route::get('/create', [NurseController::class, 'create'])->name('nurse.create');
+    Route::get('/{id}', [NurseController::class, 'show'])->name('nurse.show');
+    Route::get('/{id}/edit', [NurseController::class, 'edit'])->name('nurse.edit');
+    Route::delete('/{id}', [NurseController::class, 'destroy'])->name('nurse.destroy');
 });
 
 Route::group(['middleware' => 'auth', 'prefix' => 'patient'], function () {
@@ -62,8 +77,12 @@ Route::group(['middleware' => 'auth', 'prefix' => 'patient'], function () {
 
 Route::group(['middleware' => 'auth', 'prefix' => 'room'], function () {
     Route::get('/', [RoomController::class, 'index'])->name('room');
+    Route::get('/type', [RoomController::class, 'type'])->name('room.type');
+    Route::get('/ward_a', [RoomController::class, 'warda'])->name('room.ward_a');
+    Route::get('/ward_b', [RoomController::class, 'wardb'])->name('room.ward_b');
     Route::get('/cost', [RoomController::class, 'getcost'])->name('room.getcost');
-    Route::post('/{id}/edit', [RoomController::class, 'update'])->name('room.update');
+    Route::get('/{id}/edit', [RoomController::class, 'edit'])->name('room.edit');
+    Route::post('/{id}/edit', [RoomController::class, 'update']);
 });
 
 Route::group(['middleware' => 'auth', 'prefix' => 'consulting'], function () {
@@ -82,6 +101,12 @@ Route::group(['middleware' => 'auth', 'prefix' => 'receipt'], function () {
     Route::delete('/{id}', [ReceiptController::class, 'destroy'])->name('receipt.destroy');
 });
 
+Route::group(['middleware' => 'auth', 'prefix' => 'emr'], function () {
+    Route::post('/{id}/edit', [EmrController::class, 'update']);
+    Route::get('/{id}', [EmrController::class, 'show'])->name('emr.show');
+    Route::get('/{id}/edit', [EmrController::class, 'edit'])->name('emr.edit');
+});
+
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
@@ -93,10 +118,11 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::group(['middleware' => 'auth'], function () {
     /* ------------------- Inpatient --------------------- */
-    Route::get('/inpatient', [InpatientController::class, 'index'])
-    ->name('homeInpatient');
-    Route::get('/inpatient/dashboard', [InpatientController::class, 'dashboard'])
-    ->name('inpatientPatient');
+    Route::get('/inpatient', [InpatientController::class, 'index'])->name('inpatient');
+    Route::get('/inpatient/patient', [InpatientController::class, 'patient'])->name('inpatient.list');
+    Route::get('/inpatient/patient/{id}', [InpatientController::class, 'show'])->name('inpatient.show');
+    Route::get('/inpatient/create', [InpatientController::class, 'create'])->name('inpatient.create');
+    Route::post('/inpatient/create', [InpatientController::class, 'store']);
 
     /* ------------------- Out-patient --------------------- */
     Route::get('/outpatient', function() {
@@ -151,7 +177,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/radiologi_lab/formlab', function () {
         return view('radiologi_lab.formlab');
     });
-    
+
     Route::get('/radiologi_lab/paylab', function () {
     return view('radiologi_lab.paylab');
     });
@@ -159,25 +185,24 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/radiologi_lab/ambil', function () {
     return view('radiologi_lab.ambil');
     });
-    
+
     Route::get('/radiologi_lab/layanan', function () {
     return view('radiologi_lab.layanan');
     });
-    
+
     /* ------------------- Pharmacy --------------------- */
     Route::get('/pharmacy', function() {
         return view('pharmacy.home');
     })->name('pharmacy');
-    
+
     Route::get('order', 'App\Http\Controllers\MedicineController@orderdata');
-    
+
     Route::get('order/addmedicine', 'App\Http\Controllers\MedicineController@addmedicine');
 });
 
 
 
-        
-    
 
 
-    
+
+
