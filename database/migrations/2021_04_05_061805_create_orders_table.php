@@ -15,12 +15,12 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('Nama_Farmasis');
-            $table->string('Nama_Obat');
-            $table->string('Jenis_Obat');
-            $table->string('Jumlah');
-            $table->string('Harga_Beli');
-            $table->string('Harga_Jual');
+            $table->string('Nama_Obat',100);
+            $table->string('Jenis_Obat',100);
+            $table->string('Kategori_Obat',100);
+            $table->integer('Jumlah');
+            $table->integer('Harga_Beli');
+            $table->integer('Harga_Jual');
             $table->text('Supplier');
             $table->date('Tanggal_Kadaluarsa');
         });

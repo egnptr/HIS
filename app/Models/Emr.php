@@ -10,8 +10,14 @@ class Emr extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id_patient',
+        'id_cin',
         'blood_pressure',
         'heart_rate',
-        'blood_sugar'
+        'blood_sugar',
+        'height',
+        'weight',
+        'diagnosis',
+        'updated_at'
     ];
 }

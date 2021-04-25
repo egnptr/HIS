@@ -1,19 +1,6 @@
 <!doctype html>
-<html lang="en">
-  <head>
-  
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+@extends('layout.app')
+@section('content')
 <div class="container">
 
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +9,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-			<a class="nav-link" href="/index">Beranda </a>
+			<a class="nav-link" href="/operating_theatre">Beranda </a>
       </li>
       <li class="nav-item">
-			<a class="nav-link" href="/dokter">Cari Dokter</a>
+			<a class="nav-link" href="/operating_theatre/dokter">Cari Dokter</a>
       </li>
 	    <li class="nav-item">
-			<a class="nav-link" href="/about">Tentang Kami</a>
+			<a class="nav-link" href="/operating_theatre/about">Tentang Kami</a>
       </li>
       	  <li class="nav-item">
-			<a class="nav-link" href="/consultation">Consultation</a>
+			<a class="nav-link" href="/operating_theatre/consultation">Consultation</a>
       </li>
     </ul>
   </div>
@@ -97,5 +84,4 @@
 			<p  style="text-decoration: none; color: #818a96; font-size: 75%; text-align:center; background-color:#2b3440;">COPYRIGHT © 2020 Erik Francesco 01082180002 Jovita Senjoyo 01082180001 ALL RIGHTS RESERVED. TERMS OF USE. PRIVACY STATEMENT.</p>
 		</div>
 		</div>
-  </body>
-</html>
+@endsection

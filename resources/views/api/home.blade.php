@@ -27,17 +27,12 @@
         <div class="branding docs-branding">
             <div class="container-fluid position-relative py-2">
                 <div class="docs-logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="{{ url('/apicss/assets/images/coderdocs-logo.svg') }}" alt="logo"><span class="logo-text">HIS<span class="text-alt">PROJECT</span></span></a></div>    
+	                <div class="site-logo"><a class="navbar-brand" href="/api"><img class="logo-icon mr-2" src="{{ url('/apicss/assets/images/coderdocs-logo.svg') }}" alt="logo"><span class="logo-text">HIS<span class="text-alt">PROJECT</span></span></a></div>    
                 </div><!--//docs-logo-wrapper-->
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
 	
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a>
+				
+		            <a href="#" class="btn btn-primary d-none d-lg-flex">Download</a>
 	            </div><!--//docs-top-utilities-->
             </div><!--//container-->
         </div><!--//branding-->
@@ -49,12 +44,8 @@
 	    <div class="theme-bg-shapes-left"></div>
 	    <div class="container">
 		    <h1 class="page-heading single-col-max mx-auto">Documentation</h1>
-		    <div class="page-intro single-col-max mx-auto">Everything you need to use HIS Project services.</div>
+		    <div class="page-intro single-col-max mx-auto">Everything you need to use out HIS Project API services.</div>
 		    <div class="main-search-box pt-3 d-block mx-auto">
-                 <form class="search-form w-100">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
              </div>
 	    </div>
     </div><!--//page-header-->
@@ -74,7 +65,7 @@
 							    <div class="card-text">
 								An Introduction to our API service.
 							    </div>
-							    <a class="card-link-mask" href="/apipage"></a>
+							    <a class="card-link-mask" href="/api/page"></a>
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
@@ -90,28 +81,12 @@
 							    <div class="card-text">
 								Our list of APIs used for our API service.
 								</div>
-							    <a class="card-link-mask" href="/apipage"></a>
+							    <a class="card-link-mask" href="/api/page"></a>
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
 				   
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-lightbulb"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">FAQs</span>
-							    </h5>
-							    <div class="card-text">
-								Everything you need to know in order to use our API service to its full potential.
-								</div>
-							    <a class="card-link-mask" href="/apipage"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-			    </div><!--//row-->
+				    
 		    </div><!--//container-->
 		</div><!--//container-->
     </div><!--//page-content-->
@@ -123,7 +98,7 @@
 		    <h3 class="mb-2 text-white mb-3">Having difficulties with the api service?</h3>
 		    <div class="section-intro text-white mb-3 single-col-max mx-auto">Feel free to contact the developing team and ask any question.</div>
 		    <div class="pt-3 text-center">
-			    <a class="btn btn-light" href="#">Contact Now<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+			    <a class="btn btn-light" href="http://www.google.com">Contact Now<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 		    </div>
 	    </div>
     </section><!--//cta-section-->
@@ -134,14 +109,7 @@
 
 	    <div class="footer-bottom text-center py-5">
 		    
-		    <ul class="social-list list-unstyled pb-4 mb-0">
-			    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-	        </ul><!--//social-list-->
+		   
 	        
 	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
             <small class="copyright">Copyright  2021 HIS PROJECT</small>

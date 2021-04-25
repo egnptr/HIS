@@ -17,6 +17,8 @@ class CreateRoomsTable extends Migration
             $table->id();
             $table->string('room_name');
             $table->integer('total_bed');
+            $table->integer('bed_used');
+            $table->string('status');
             $table->integer('cost');
             $table->timestamps();
         });

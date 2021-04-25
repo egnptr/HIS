@@ -34,7 +34,7 @@
             <div class = "card">
                 <div class="card-header">
                    <div class="pull-left">
-                        <strong>Tambah Pesan Obat</strong>   
+                        <strong>Tambah Informasi Obat</strong>   
                     </div> 
                     <div class="pull-right">
                         <a href="{{ url('order') }}" class="btn btn-success btn-sm">
@@ -49,16 +49,35 @@
                     <form action="{{ url ('order') }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Nama Farmasis</label>
-                            <input type="text" name="Nama_Farmasis" class="form-control" autofocus required>
-                        </div>
-                        <div class="form-group">
                             <label>Nama Obat</label>
                             <input type="text" name="Nama_Obat" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Jenis Obat</label>
-                            <input type="text" name="Jenis_Obat" class="form-control" required>
+                            <select id="Jenis_Obat" name="Jenis_Obat" class="form-control" required>
+                                <option value="Analgesik">Analgesik</option>
+                                <option value="Antibiotik">Antibiotik</option>
+                                <option value="Anti Konvulsan">Anti Konvulsan</option>
+                                <option value="Anti Konvulsan">Bonkodilator</option>
+                                <option value="Diabetes">Diabetes</option>
+                                <option value="Elektrolit">Elektrolit</option>
+                                <option value="Hormon">Hormon</option>
+                                <option value="Imunoglobulin">Imunoglobulin</option>
+                                <option value="Insulin">Insulin</option>
+                                <option value="Infeksi">Infeksi</option>
+                                <option value="Kolestrol">Kolestrol</option>
+                                <option value="Mental">Mental</option>
+                                <option value="Migrain">Migrain</option>
+                                <option value="Paracetamol">Paracetamol</option>
+                                <option value="PDE-5 Inhibitor">PDE-5 Inhibitor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Kategori Obat</label>
+                            <select id="Kategori_Obat" name="Kategori_Obat" class="form-control" required>
+                                <option value="Butuh Resep">Butuh Resep</option>
+                                <option value="Bebas">Bebas</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label>Jumlah</label>
@@ -74,13 +93,22 @@
                         </div>
                         <div class="form-group">
                             <label>Supplier</label>
-                            <textarea name="Supplier" class="form-control" required></textarea>
+                            <select id="Supplier" name="Supplier" class="form-control" required>
+                                <option value="PT. Afifarma">PT. Afifarma</option>
+                                <option value="PT. ASTA Medica">PT. ASTA Medica</option>
+                                <option value="PT. Aventis">PT. Aventis</option>
+                                <option value="PT. Biofarma">PT. Biofarma</option>
+                                <option value="PT. Bufa Aneka">PT. Bufa Aneka</option>
+                                <option value="PT. Eli Lily">PT. Eli Lily</option>
+                                <option value="PT. MersiFarma">PT. MersiFarma</option>
+                                <option value="Pt. Otsuka">Pt. Otsuka</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label>Tanggal Kadaluarsa</label>
                             <input type="date" name="Tanggal_Kadaluarsa" class="form-control" required>
                         </div>
-                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="submit" class="btn btn-success">Simpan</button>
                     </form>
                     </div>
                     </div>

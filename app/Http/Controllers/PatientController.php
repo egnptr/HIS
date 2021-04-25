@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Patient;
+use App\Models\Emr;
 use Illuminate\Http\Request;
 
 class PatientController extends Controller
@@ -58,7 +59,15 @@ class PatientController extends Controller
         ]);
 
         Patient::create($request->all());
-
+        
+        $patient = Patient::where('name', $request->name)->where('ktp', $request->ktp)
+                    ->where('sex', $request->sex)->where('dob', $request->dob)
+                    ->where('email', $request->email)->where('phone', $request->phone)
+                    ->where('address', $request->address)->pluck('id');
+        
+        Emr::create([
+            'id_patient' => $patient->first()
+        ]);
 
         return redirect()->route('patient');
     }

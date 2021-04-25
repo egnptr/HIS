@@ -13,18 +13,16 @@
             <form method="POST" action="{{ route('receipt.edit', $receipt) }}">
                 @csrf
                 <div class="bg-white sm:p-6">
-                    <label for="paid_off" class="block text-xs font-semibold text-gray-600 uppercase">Paid</label>
-                    <select id="paid_off" name="paid_off" class="block w-1/4 py-3 px-1 mt-2
-                        text-gray-800 border-b-2">
-                        @if ($receipt->paid_off === 0)
-                            <option value="0" selected require>Not Settled</option>
-                            <option value="1">Settled</option>
-                        @else
-                            <option value="1" selected require>Settled</option>
-                            <option value="0">Not Settled</option>
-                        @endif
-                    </select>
-                    @error('paid_off')
+                    <label for="date_out" class="block text-xs font-semibold text-gray-600 uppercase">Type</label>
+                    <input id="type" name="type"
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
+                        border-b-2 border-gray-100
+                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                        onchange="cal()"
+                        value="{{ $receipt->type }}"
+                        />
+                    @error('type')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}
                         </div>
@@ -39,7 +37,7 @@
                         <option value="{{ $receipt->patient_name }}" selected require>{{ $receipt->patient_name }}</option>
                         @foreach ($patients as $patient)
                             <option>
-                                {{ $patient->name }}
+                                {{ $receipt->name }}
                             </option>
                         @endforeach
                     </select>
@@ -143,14 +141,16 @@
 
                 <div class="bg-white sm:p-6">
                     <label for="medicine_cost" class="block text-xs font-semibold text-gray-600 uppercase">Medicine Cost</label>
-                    <input id="medicine_cost" type="number" name="medicine_cost"
-                        class="block w-full py-3 px-1 mt-2
-                        text-gray-800 appearance-none
-                        border-b-2 border-gray-100
-                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                        value="{{ $receipt->medicine_cost }}"
-                        onchange="cost()"
-                        />
+                    <select id="medicine_cost" name="medicine_cost" class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none border-b-2 border-gray-100"
+                        onchange="cost()">
+                        <option value="{{ $receipt->medicine_cost }}" selected require>{{ $receipt->medicine_cost }}</option>
+                        @foreach ($medicines as $medicine)
+                            <option value="{{ $medicine->Harga_Jual }}">
+                                {{ $medicine->Nama_Obat }} - {{ $medicine->Harga_Jual }}
+                            </option>
+                        @endforeach
+                    </select>
                     @error('medicine_cost')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}

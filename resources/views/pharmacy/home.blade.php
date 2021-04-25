@@ -65,7 +65,7 @@
             <div class="card-body">
                 <i class="menu-icon fa fa-tasks" style="font-size:60px;"></i>
                 <p></p>
-                <button onclick="location.href='{{ url ('infopres') }}'" class="btn btn-light btn-sm btn-block">Lihat</button>
+                <button onclick="location.href='{{ url ('inforesep') }}'" class="btn btn-light btn-sm btn-block">Lihat</button>
             </div>
         </div>
     </div>

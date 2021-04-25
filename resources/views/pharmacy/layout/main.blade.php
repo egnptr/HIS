@@ -49,19 +49,9 @@
                     </li>
 
                     <h3 class="menu-title">Master Resep</h3><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Resep Pasien</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="{{ url ('addpres') }}">Tambah Resep Pasien</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="{{ url ('infopres') }}">Informasi Resep</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Resep Tebus Obat</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-line-chart"></i><a href="{{ url ('addran') }}">Tambah Resep Tebus Obat</a></li>
-                            <li><i class="menu-icon fa fa-area-chart"></i><a href="{{ url ('inforan') }}">Informasi Resep Tebus Obat</a></li>
-                        </ul>
+                    <li>
+                        <a href="{{ url ('inforesep') }}"> <i class="menu-icon fa fa-tasks"></i>Resep Pasien </a>
+                        <a href="{{ url ('inforan') }}"> <i class="menu-icon fa fa-bar-chart"></i>Resep Tebus Obat </a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -93,10 +83,10 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5">
+                    <div class="col-sm-5">
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="avatar/1.jpg" alt="Farmasi">
+                            Farmasi
                         </a>
 
                     <div class="language-select dropdown" id="language-select">

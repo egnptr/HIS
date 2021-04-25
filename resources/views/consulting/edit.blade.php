@@ -14,13 +14,17 @@
                 @csrf
                 <div class="bg-white sm:p-6">
                     <label for="doctor_in_charge" class="block text-xs font-semibold text-gray-600 uppercase">Doctor In Charge</label>
-                    <input id="doctor_in_charge" type="text" name="doctor_in_charge"
-                        class="block w-full py-3 px-1 mt-2
+                    <select id="doctor_in_charge" name="doctor_in_charge" class="block w-full py-3 px-1 mt-2
                         text-gray-800 appearance-none
-                        border-b-2 border-gray-100
-                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                        value="{{ $room->doctor_in_charge }}"
-                        />
+                        border-b-2 border-gray-100">
+                        <option value="{{ $room->doctor_in_charge }}" selected require>{{ $room->doctor_in_charge }}</option>
+                        <option value="">None</option>
+                        @foreach ($doctors as $doctor)
+                            <option value="{{ $doctor->name }}">
+                                {{ $doctor->name }}
+                            </option>
+                        @endforeach
+                    </select>
                     @error('doctor_in_charge')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}

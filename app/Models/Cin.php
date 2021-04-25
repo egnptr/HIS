@@ -18,5 +18,6 @@ class Cin extends Model
         'case_detail',
         'type',
         'status',
+        'scanning_tool'
     ];
 }

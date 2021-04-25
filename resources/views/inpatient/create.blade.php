@@ -72,10 +72,11 @@
                         text-gray-800 appearance-none
                         border-b-2 border-gray-100">
                         <option value="" selected require>Choose a group case</option>
-                        <option value="test">Test</option>
-                        <option value="test">Test</option>
-                        <option value="test">Test</option>
-                        <option value="test">Test</option>
+                        @foreach ($group_cases as $group_case)
+                            <option value="{{ $group_case->id }}">
+                                {{ $group_case->name }}
+                            </option>
+                        @endforeach
                     </select>
                     @error('group_case')
                         <div class="text-red-500 mt-2 text-sm">
@@ -86,16 +87,32 @@
 
                 <div class="bg-white sm:p-6">
                     <label for="case_detail" class="block text-xs font-semibold text-gray-600 uppercase">Case Detail</label>
-                    <select id="case_detail" name="case_detail" class="block w-full py-3 px-1 mt-2
+                    <input id="case_detail" type="text" name="case_detail" placeholder="Enter case_detail..."
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
+                        border-b-2 border-gray-100
+                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                        />
+                    @error('case_detail')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+                
+                <div class="bg-white sm:p-6">
+                    <label for="room" class="block text-xs font-semibold text-gray-600 uppercase">Room</label>
+                    <select id="room" name="room" class="block w-full py-3 px-1 mt-2
                         text-gray-800 appearance-none
                         border-b-2 border-gray-100">
-                        <option value="" selected require>Choose a case detail</option>
-                        <option value="test">Test</option>
-                        <option value="test">Test</option>
-                        <option value="test">Test</option>
-                        <option value="test">Test</option>
+                        <option value="" selected require>Choose a room</option>
+                        @foreach ($rooms as $room)
+                            <option value="{{ $room->id }}">
+                                {{ $room->ward }} - {{ $room->type }}
+                            </option>
+                        @endforeach
                     </select>
-                    @error('case_detail')
+                    @error('room')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}
                         </div>

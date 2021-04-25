@@ -51,9 +51,9 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Nama Farmasis</th>
                                 <th>Nama Obat</th>
                                 <th>Jenis Obat</th>
+                                <th>Kategori Obat</th>
                                 <th>Jumlah</th>
                                 <th>Harga Beli</th>
                                 <th>Harga Jual</th>
@@ -66,9 +66,9 @@
                             @foreach ($order as $item)
                                 <tr>
                                     <td>{{ $loop ->iteration }}</td>
-                                    <td>{{ $item ->Nama_Farmasis }}</td>
                                     <td>{{ $item ->Nama_Obat }}</td>
                                     <td>{{ $item ->Jenis_Obat }}</td>
+                                    <td>{{ $item ->Kategori_Obat }}</td>
                                     <td>{{ $item ->Jumlah }}</td>
                                     <td>{{ $item ->Harga_Beli }}</td>
                                     <td>{{ $item ->Harga_Jual }}</td>

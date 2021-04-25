@@ -23,6 +23,7 @@ class CreateCinsTable extends Migration
             $table->string('case_detail');
             $table->string('type');
             $table->string('status');
+            $table->string('scanning_tool');
             $table->timestamps();
         });
     }

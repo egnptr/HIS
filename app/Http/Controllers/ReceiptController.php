@@ -7,6 +7,7 @@ use App\Models\Patient;
 use App\Models\Receipt;
 use App\Models\Room;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ReceiptController extends Controller
 {
@@ -24,11 +25,13 @@ class ReceiptController extends Controller
         $patients = Patient::all();
         $doctors = Doctor::all();
         $rooms = Room::all();
+        $medicines = DB::table('orders')->get();
 
         return view('receipt.create', [
             'patients' => $patients,
             'doctors' => $doctors,
             'rooms' => $rooms,
+            'medicines' => $medicines,
         ]);
     }
 
@@ -37,12 +40,14 @@ class ReceiptController extends Controller
         $patients = Patient::all();
         $doctors = Doctor::all();
         $rooms = Room::all();
+        $medicines = DB::table('orders')->get();
 
         return view('receipt.edit', [
             'receipt' => Receipt::findOrFail($id),
             'patients' => $patients,
             'doctors' => $doctors,
             'rooms' => $rooms,
+            'medicines' => $medicines,
         ]);
     }
 
@@ -51,6 +56,7 @@ class ReceiptController extends Controller
         $receipt = Receipt::findOrFail($id);
 
         $receipt->update([
+            'type' => $request->type,
             'patient_name' => $request->patient_name,
             'doctor_name'=> $request->doctor_name,
             'date_in' => $request->date_in,
@@ -72,6 +78,7 @@ class ReceiptController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
+            'type' => 'required|max:255',
             'patient_name' => 'required|max:255',
             'doctor_name' => 'required|max:255',
             'date_in' => 'required',

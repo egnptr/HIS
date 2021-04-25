@@ -10,18 +10,15 @@ class Receipt extends Model
     use HasFactory;
 
     protected $fillable = [
+        'type',
         'patient_name',
         'doctor_name',
-        'date_in',
-        'date_out',
-        'room_type',
         'room_cost',
+        'service_cost',
         'medicine_cost',
         'consumption_cost',
         'lab_cost',
         'radiology_cost',
-        'maintenance_cost',
-        'total_cost',
-        'paid_off',
+        'total_cost'
     ];
 }

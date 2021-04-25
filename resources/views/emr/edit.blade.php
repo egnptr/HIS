@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('title')
-<title>Edit {{ $patient->first()->name }}'s EMR</title>
+<title>Edit {{ $patient->name }}'s EMR</title>
 @endsection
 
 @section('content')
@@ -11,7 +11,7 @@
         px-6 py-10 sm:px-10 sm:py-6
         bg-white rounded-lg shadow-md lg:shadow-lg">
             <h2 class="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
-                {{ $patient->first()->name }}'s EMR
+                {{ $patient->name }}'s EMR
             </h2>
 
             <form method="POST" action="{{ route('emr.edit', $patient) }}">
@@ -58,6 +58,54 @@
                         value="{{ $emr->first()->blood_sugar }}"
                         />
                     @error('blood_sugar')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+                
+                <div class="bg-white sm:p-6">
+                    <label for="height" class="block text-xs font-semibold text-gray-600 uppercase">Height</label>
+                    <input id="height" type="text" name="height" placeholder="Enter height... "
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
+                        border-b-2 border-gray-100
+                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                        value="{{ $emr->first()->height }}"
+                        />
+                    @error('height')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+                
+                <div class="bg-white sm:p-6">
+                    <label for="weight" class="block text-xs font-semibold text-gray-600 uppercase">Weight</label>
+                    <input id="weight" type="text" name="weight" placeholder="Enter weight... "
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
+                        border-b-2 border-gray-100
+                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                        value="{{ $emr->first()->weight }}"
+                        />
+                    @error('weight')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+                
+                <div class="bg-white sm:p-6">
+                    <label for="diagnosis" class="block text-xs font-semibold text-gray-600 uppercase">Diagnosis</label>
+                    <input id="diagnosis" type="text" name="diagnosis" placeholder="Enter diagnosis... "
+                        class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
+                        border-b-2 border-gray-100
+                        focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                        value="{{ $emr->first()->diagnosis }}"
+                        />
+                    @error('diagnosis')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}
                         </div>

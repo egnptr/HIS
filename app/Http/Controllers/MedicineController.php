@@ -23,16 +23,16 @@ class MedicineController extends Controller
     public function addenter(Request $request)
     {
         DB::table('orders')->insert([
-            'Nama_Farmasis' => $request->Nama_Farmasis,
             'Nama_Obat' => $request->Nama_Obat,
             'Jenis_Obat' => $request->Jenis_Obat,
+            'Kategori_Obat' => $request->Kategori_Obat,
             'Jumlah' => $request->Jumlah,
             'Harga_Beli' => $request->Harga_Beli,
             'Harga_Jual' => $request->Harga_Jual,
             'Supplier' => $request->Supplier,
             'Tanggal_Kadaluarsa' => $request->Tanggal_Kadaluarsa
         ]);
-        return redirect('order')->with('status', 'Pesanan Telah Terkirim!');
+        return redirect('order')->with('status', 'Informasi Telah Ditambah!');
     }
     public function editmedicine($id)
     {
@@ -43,9 +43,9 @@ class MedicineController extends Controller
     {
         DB::table('orders')->where('id', $id)
             ->update([
-            'Nama_Farmasis' => $request->Nama_Farmasis,
             'Nama_Obat' => $request->Nama_Obat,
             'Jenis_Obat' => $request->Jenis_Obat,
+            'Kategori_Obat' => $request->Kategori_Obat,
             'Jumlah' => $request->Jumlah,
             'Harga_Beli' => $request->Harga_Beli,
             'Harga_Jual' => $request->Harga_Jual,
