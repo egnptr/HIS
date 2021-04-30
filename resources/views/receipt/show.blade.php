@@ -26,28 +26,14 @@
                         </div>
                     </div>
 
-                    <!--<div class="py-8 flex flex-wrap md:flex-nowrap">-->
-                    <!--    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">-->
-                    <!--        <span class="font-semibold title-font text-gray-700">DATE</span>-->
-                    <!--    </div>-->
-                    <!--    <div class="md:flex-grow">-->
-                    <!--        <span class="font-mono font-mono font-light">In</span>-->
-                    <!--        <p class="leading-relaxed">{{ $receipt->date_in }}</p>-->
-                    <!--    </div>-->
-                    <!--    <div class="md:flex-grow">-->
-                    <!--        <span class="font-mono font-light">Out</span>-->
-                    <!--        <p class="leading-relaxed">{{ $receipt->date_out }}</p>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-
-                    <!--<div class="py-8 flex flex-wrap md:flex-nowrap">-->
-                    <!--    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">-->
-                    <!--        <span class="font-semibold title-font text-gray-700">ROOM TYPE</span>-->
-                    <!--    </div>-->
-                    <!--    <div class="md:flex-grow">-->
-                    <!--        <p class="leading-relaxed">{{ $receipt->room_type }}</p>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-semibold title-font text-gray-700">DATE</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <p class="leading-relaxed">{{ $receipt->created_at }}</p>
+                        </div>
+                    </div>
 
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">

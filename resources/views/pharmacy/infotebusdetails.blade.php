@@ -1,6 +1,6 @@
 @extends('pharmacy/layout/main')
 
-@section('title', 'inforesepdetails')
+@section('title', 'infotebusdetails')
 
 @section('breadcrumbs')
     <div class="breadcrumbs">
@@ -17,9 +17,9 @@
                 <div class="page-title">
                     <ol class="breadcrumb text-right">
                         <li>
-                            <a href="#">Master Resep</a>
+                            <a href="#">Master resep</a>
                         </li>
-                        <li class = "active"><a href="#">Informasi Resep</a></li>
+                        <li class = "active"><a href="#">Informasi Tebus Obat</a></li>
                     </ol>
                 </div>
             </div>
@@ -31,7 +31,7 @@
 <div class="flex justify-center">
     <div class="w-8/12">
         <div class="p-6">
-            @foreach ($inforesepdetails as $item)
+            @foreach ($infotebusdetails as $item)
             @endforeach
             @foreach ($patient as $items)
                 <h1 class="text-2xl font-semibold mb-1" align="center">{{ $item ->Patients }}</h1>
@@ -43,20 +43,11 @@
                 <table class = "table table-striped">
                     <thead>
                         <tr>
-                            <th>DETAIL RESEP OBAT</th>
+                            <th>DETAIL TEBUS OBAT</th>
                         </tr> 
                     </thead>
             <tbody>
-            <div class="bg-white p-6 rounded-lg">
-                <div class="-my-8 divide-y-2 divide-gray-100">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <td><span class="font-semibold title-font text-blue-500">Doctor</span></td>
-                        </div>
-                        <div class="md:flex-grow">
-                            <td><p style="color:#02686f">{{ $item ->Doctors }}</p></td>
-                        </div></tr>
-                    </div>
+            
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <td><span class="font-semibold title-font text-gray-700">Obat 1</span></td>
@@ -73,6 +64,25 @@
                         </div>
                         <div class="md:flex-grow">
                             <td><p style="color:#02686f">{{ $item ->Dosis_Obat_1 }}</p></td>
+                        </div>
+                        </tr>
+                    </div>
+                    
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <td><span class="font-semibold title-font text-gray-700">Harga Obat 1</span></td>
+                        </div>
+                        <div class="md:flex-grow">
+                            <td><p style="color:#02686f"><?php
+                                                        if($item->Harga_Obat_1 == null) {
+                                                         echo ('0');
+                                                        }?>
+                                                        <?php
+                                                        if($item->Harga_Obat_1 != null) {?>
+                                                            {{ $item ->Harga_Obat_1 }}
+                                                        <?php }?> </p></td>
+                                                        
+                            
                         </div>
                         </tr>
                     </div>
@@ -112,6 +122,27 @@
                         </div>
                         </tr>
                     </div>
+                    
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <td><span class="font-semibold title-font text-gray-700">Harga Obat 2</span></td>
+                        </div>
+                        <div class="md:flex-grow">
+                            <td><p style="color:#02686f"><?php
+                                                        if($item->Harga_Obat_2 == null) {
+                                                         echo ('-');
+                                                        }?>
+                                                        <?php
+                                                        if($item->Harga_Obat_2 != null) {?>
+                                                            {{ $item ->Harga_Obat_2 }}
+                                                        <?php }?> </p></td>
+                                                        
+                            
+                        </div>
+                        </tr>
+                    </div>
+                    
+                    
 
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
@@ -142,6 +173,25 @@
                                                         <?php
                                                         if($item->Dosis_Obat_3 != null) {?>
                                                             {{ $item ->Dosis_Obat_3 }}
+                                                        <?php }?> </p></td>
+                                                        
+                            
+                        </div>
+                        </tr>
+                    </div>
+                    
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <td><span class="font-semibold title-font text-gray-700">Harga Obat 3</span></td>
+                        </div>
+                        <div class="md:flex-grow">
+                            <td><p style="color:#02686f"><?php
+                                                        if($item->Harga_Obat_3 == null) {
+                                                         echo ('-');
+                                                        }?>
+                                                        <?php
+                                                        if($item->Harga_Obat_3 != null) {?>
+                                                            {{ $item ->Harga_Obat_3 }}
                                                         <?php }?> </p></td>
                                                         
                             
@@ -187,6 +237,25 @@
                     
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <td><span class="font-semibold title-font text-gray-700">Harga Obat 4</span></td>
+                        </div>
+                        <div class="md:flex-grow">
+                            <td><p style="color:#02686f"><?php
+                                                        if($item->Harga_Obat_4 == null) {
+                                                         echo ('-');
+                                                        }?>
+                                                        <?php
+                                                        if($item->Harga_Obat_4 != null) {?>
+                                                            {{ $item ->Harga_Obat_4 }}
+                                                        <?php }?> </p></td>
+                                                        
+                            
+                        </div>
+                        </tr>
+                    </div>
+                    
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <td><span class="font-semibold title-font text-gray-700">Obat 5</span></td>
                         </div>
                         <div class="md:flex-grow">
@@ -218,6 +287,37 @@
                                                         
                             
                         </div>
+                        </tr>
+                    </div>
+                    
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <td><span class="font-semibold title-font text-gray-700">Harga Obat 5</span></td>
+                        </div>
+                        <div class="md:flex-grow">
+                            <td><p style="color:#02686f"><?php
+                                                        if($item->Harga_Obat_5 == null) {
+                                                         echo ('-');
+                                                        }?>
+                                                        <?php
+                                                        if($item->Harga_Obat_5 != null) {?>
+                                                            {{ $item ->Harga_Obat_5 }}
+                                                        <?php }?> </p></td>
+                                                        
+                            
+                        </div>
+                        </tr>
+                    </div>
+                    
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <tr><div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <td><span class="font-semibold title-font text-gray-700"><strong>Total Harga</strong></span></td>
+                        </div>
+                        <div class="md:flex-grow">
+                            <td><p style="color:#02686f"><strong>{{ $total }}</strong></p></td>
+                        </div>
+                        </tr>
+                    </div>
                         </tr>
                     </div>
 @endforeach

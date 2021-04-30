@@ -10,7 +10,7 @@
                 Create Laboratory Service
             </h2>
 
-            <form method="POST" action="{{ route('Radiologi.create') }}">
+            <form method="POST" action="{{ route('Laboratorium.create') }}">
                 @csrf
                 <div class="bg-white sm:p-6">
                     <label for="id_patient" class="block text-xs font-semibold text-gray-600 uppercase">Patient Name</label>
@@ -100,12 +100,24 @@
                     @enderror
                 </div>
                 
+                <div class="bg-white sm:p-6">
+                    <label for="scanning_lab" class="block text-xs font-semibold text-gray-600 uppercase">Lab Examination</label>
+                    <select id="scanning_lab" name="scanning_lab" class="block w-full py-3 px-1 mt-2
+                        text-gray-800 appearance-none
+                        border-b-2 border-gray-100">
+                        <option value="" selected require>Choose a scanning tool</option>
+                        <option value="Darah">Cek Darah</option>
+                        <option value="Dahak">Cek Dahak</option>
+                        <option value="Urine">Cek Urine</option>
+                    </select>
+                </div>
+                
                 
                 <input id="type" type="text" name="type" value="Laboratorium" hidden/>
                 <input id="status" type="text" name="status" value="Ongoing" hidden/>
 
                 <div class="flex items-center justify-end px-4 py-3 space-x-4 sm:px-6">
-                    <a href="{{ route('Radiologi.radiologipatient') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150">
+                    <a href="{{ route('Laboratorium.laboratorypatient') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150">
                         Back to list
                     </a>
                     <button class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150">
