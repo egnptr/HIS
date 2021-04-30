@@ -62,6 +62,17 @@
                             <p class="leading-relaxed">{{ $emr->first()->weight }}</p>
                         </div>
                     </div>
+
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-semibold title-font text-gray-700">Image</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <p class="leading-relaxed">
+                                <img width="150px" src="{{ url('/data_file/'.$emr->first()->file) }}">
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             

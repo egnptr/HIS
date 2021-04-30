@@ -25,6 +25,7 @@
                 @endcanany
                 <a href="{{ route('dashboard') }}" class="block md:inline-block text-white hover:text-gray-500 px-3 py-3 border-b-2 border-keppel-900 md:border-none">Dashboard</a>
                 <a href="{{ route('facility') }}" class="block md:inline-block text-white hover:text-gray-500 px-3 py-3 border-b-2 border-keppel-900 md:border-none">Facility</a>
+                <a href="/api" class="block md:inline-block text-white hover:text-gray-500 px-3 py-3 border-b-2 border-keppel-900 md:border-none">Documentation</a>
             </div>
 
             <div class="toggle hidden md:flex w-full md:w-auto text-right text-bold mt-5 md:mt-0 md:border-none">

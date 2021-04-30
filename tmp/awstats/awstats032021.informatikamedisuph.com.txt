@@ -1,0 +1,812 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202103 will be lost/reset.
+# Last config file used to build this data file was /home/inform30/tmp/awstats/awstats.informatikamedisuph.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2020                
+POS_TIME 2705                
+POS_VISITOR 15935               
+POS_DAY 24621               
+POS_DOMAIN 3557                
+POS_LOGIN 4101                
+POS_ROBOT 4256                
+POS_WORMS 4835                
+POS_EMAILSENDER 4966                
+POS_EMAILRECEIVER 5109                
+POS_SESSION 25205               
+POS_SIDER 25412               
+POS_FILETYPES 5244                
+POS_DOWNLOADS 5489                
+POS_OS 5537                
+POS_BROWSER 5836                
+POS_SCREENSIZE 7858                
+POS_UNKNOWNREFERER 7932                
+POS_UNKNOWNREFERERBROWSER 8929                
+POS_ORIGIN 9642                
+POS_SEREFERRALS 9783                
+POS_PAGEREFS 9970                
+POS_SEARCHWORDS 10160               
+POS_KEYWORDS 10328               
+POS_MISC 2367                
+POS_ERRORS 10403               
+POS_CLUSTER 3957                
+POS_SIDER_404 10577               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20210323184441 582 145871 19185796224985
+FirstTime 20210304215112
+LastTime 20210323175349
+LastUpdate 20210323210631 582 0 582 0 0
+TotalVisits 249                 
+TotalUnique 218                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 219                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 258 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 92 122 13305818 54 250 16805848
+1 16 26 31448324 14 18 43088
+2 6 8 7864298 16 20 44914
+3 8 14 23562888 4 8 13224
+4 16 32 932224 8 16 41884
+5 12 40 5676666 16 30 103370
+6 8 8 15960 4 6 25228
+7 30 62 25329152 10 24 65224
+8 136 160 17623434 28 40 108470
+9 40 74 27062330 12 28 40808
+10 62 74 8872222 20 30 63264
+11 106 146 31058050 50 66 8312234
+12 226 234 18843096 84 138 15837818
+13 278 308 41514048 82 212 22186000
+14 66 76 26067742 124 130 388044
+15 52 68 27392008 20 24 19528
+16 22 44 24488012 26 48 135074
+17 46 84 66886402 28 36 28326
+18 16 16 21804 4 8 18896
+19 68 90 44143446 2 28 812
+20 78 104 54018062 60 82 4957938
+21 152 182 12716670 26 434 6224150
+22 100 116 19024238 48 68 1320934
+23 60 68 31550738 46 54 53852
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 24
+id 1172 1518 211291206
+us 344 456 339987026
+cn 52 52 111312
+ip 38 38 25944
+ru 12 12 17188
+pl 10 10 11510
+gb 10 10 11510
+gr 6 6 16816
+no 6 6 6906
+ca 6 6 10012
+de 6 6 17898
+fr 6 6 11686
+hn 4 6 7858330
+ro 4 4 10796
+at 2 2 2302
+in 2 2 2302
+sc 2 2 2302
+es 2 2 2302
+nl 2 2 5398
+eu 2 2 2302
+jp 2 2 2302
+se 2 2 5678
+kr 2 2 2302
+hk 2 2 2302
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 11
+bingbot/ 48 74674 20210322180213 16
+Googlebot/ 38 84040 20210323051315 8
+facebookexternalhit/ 20 4756680 20210314201449 0
+baidu 12 20004 20210311055232 0
+no_user_agent 12 17188 20210322175041 0
+bot[\s_+:,\.\;\/\\-] 8 10932 20210314162328 4
+Discordbot/ 8 149534 20210323002646 0
+(firefox/)([0-9]\.|[0-1][0]\.) 6 16466 20210306085507 0
+unknown 4 96 20210322124519 4
+spider 4 4604 20210306122738 0
+DuckDuckGo\-Favicons\-Bot/ 2 5678 20210323170335 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+gif 2 796494 0 0
+js 16 2767760 0 0
+html 724 1523290 0 0
+css 138 433885428 0 0
+png 50 2067918 0 0
+svg 10 28410 0 0
+jpeg 20 1383154 0 0
+jpg 224 106851250 0 0
+Unknown 972 10113928 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 18
+Unknown 212 118
+win8 2 2
+win8.1 6 6
+win16 2 2
+winxp 4 4
+winnt 12 12
+macosx11 4 4
+linuxandroid 26 24
+win7 32 32
+linux 178 176
+unix 2 2
+win10 1426 1184
+winvista 4 4
+macosx6 2 2
+macosx 124 82
+ios_iphone 112 34
+macosx10 4 4
+macosx12 4 4
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 92
+chrome45.0.2454.94 2 2
+chrome76.0.3809.132 8 8
+chrome88.0.4324.150 10 8
+firefox18.0 2 2
+android 2 2
+safari5.1 2 2
+chrome89.0.4389.86 8 8
+chrome67.0.3396.79 4 4
+chrome88.0.4324.192 58 44
+chrome41.0.2228.0 4 4
+chrome78.0.3904.108 4 4
+firefox79.0 2 2
+chrome83.0.4103.106 6 6
+chrome76.0.3809.100 2 2
+safari11.1.2 4 4
+chrome83.0.4103.97 48 48
+firefox41.0 4 4
+chrome63.0.3239.84 2 2
+chrome19.0.1084.9 2 2
+chrome70.0.3538.77 4 4
+chrome78.0.3904.62 2 2
+firefox66.0 2 2
+chrome60.0.3112.90 4 4
+chrome80.0.3987.119 2 2
+firefox58.0 2 2
+chrome83.0.4103.61 4 4
+safari11.0 2 2
+chrome80.0.3987.132 4 4
+chrome77.0.3865.90 2 2
+chrome76.0.3809.71 10 10
+chrome89.0.4389.90 366 248
+chrome75.0.3765.0 4 4
+chrome49.0.2623.75 2 2
+netscape5.0 20 20
+chrome86.0.4240.198 2 2
+chrome86.0.4240.75 2 2
+chrome35.0.2117.157 2 2
+chrome78.0.3904.97 4 4
+safari13.0.1 88 12
+safari13.1.2 6 4
+msie10.0 4 4
+edge12 4 4
+chrome60.0.3112.113 2 2
+chrome39.0.2171.95 2 2
+safari0.8 2 2
+firefox49.0 2 2
+chrome85.0.4183.83 2 2
+chrome66.0.3359.181 2 2
+chrome41.0.2226.0 2 2
+chrome65.0.3325.181 4 4
+chrome84.0.4147.135 8 8
+chrome11.0.696.71 8 8
+chrome88.0.4324.190 6 6
+chrome59.0.3071.104 64 64
+chrome89.0.4389.82 264 214
+chrome80.0.3987.122 2 2
+opera64.0.3417.92 2 2
+firefox57.0 2 2
+chrome71.0.1203.88 2 2
+firefox33.0 4 4
+chrome84.0.4147.89 4 4
+firefox63.0 2 2
+chrome12.0.742.91 2 2
+opera73.0.3856.400 142 100
+chrome68.0.3440.106 4 4
+chrome72.0.3626.119 12 12
+chrome88.0.4324.182 2 2
+firefox86.0 48 46
+safari10.0 4 4
+msie8.0 2 2
+msie9.0 8 8
+chrome41.0.2225.0 4 4
+chrome61.0.3163.79 2 2
+chrome78.0.3904.87 2 2
+chrome51.0.2704.64 2 2
+chrome89.0.4389.72 6 6
+chrome84.0.4147.105 2 2
+mozilla 20 20
+Unknown 184 90
+opera73.0.3856.415 532 472
+chrome70.0.3538.67 32 32
+chrome81.0.4044.129 2 2
+chrome80.0.3987.149 12 12
+chrome58.0.3029.110 2 2
+chrome57.0.2987.110 2 2
+chrome79.0.3945.79 4 4
+chrome72.0.3626.109 2 2
+chrome56.0.2924.76 2 2
+chrome88.0.4324.146 8 8
+opera65.0.3467.48 4 4
+chrome73.0.2477.88 2 2
+chrome59.0.3071.115 4 4
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 16
+Expanse_indexes_the_network_perimeters_of_our_customers._If_you_have_any_questions_or_concerns,_please_reach_out_to:_scaninfo@expanseinc.com 20210320203740
+axios/0.21.1 20210309094225
+colly_-_https://github.com/gocolly/colly/v2 20210308115311
+Mozilla/5.0_Firefox/33.0 20210308130912
+Go-http-client/1.1 20210318192352
+Mozilla/5.0 20210315161938
+okhttp/3.12.13 20210308221434
+Mozilla/5.0_(compatible;_Dataprovider.com) 20210306224603
+Cpanel-HTTP-Client/1.0 20210304215113
+Mozilla/5.0_(compatible;_ips-agent) 20210311100908
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20210304215446
+Serf/1.3.9_(mod_pagespeed/1.13.35.2-0) 20210323175238
+WhatsApp/2.2104.10_N 20210305162321
+GRequests/0.10 20210314232912
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20210322200504
+Softaculous 20210309135742
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 11
+Expanse_indexes_the_network_perimeters_of_our_customers._If_you_have_any_questions_or_concerns,_please_reach_out_to:_scaninfo@expanseinc.com 20210320203740
+axios/0.21.1 20210309094225
+colly_-_https://github.com/gocolly/colly/v2 20210308115311
+Serf/1.3.9_(mod_pagespeed/1.13.35.2-0) 20210323175238
+WhatsApp/2.2104.10_N 20210305162321
+GRequests/0.10 20210314232912
+Go-http-client/1.1 20210318192352
+okhttp/3.12.13 20210308221434
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20210322200504
+Softaculous 20210309135742
+Cpanel-HTTP-Client/1.0 20210304215113
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 832 832
+From1 0 0
+From2 12 12
+From3 2 2
+From4 850 1310
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 3
+bing 2 2
+google_com 2 2
+www_google_com 8 8
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+https://andris.sg.domainesia.com:2083 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+1533467873346 2
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 1
+1533467873346 2
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+404 916 5564862
+500 110 64767222
+403 46 126312
+301 40 9722
+302 228 89192
+206 2 2302
+405 2 1139420
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 118
+/manager/assets/modext/modx.jsgrps-min.js 2 -
+/demo 2 -
+/wp-admin/install.php 16 -
+/img/staff-logo.png 12 http://informatikamedisuph.com/inpatient
+/site 2 -
+/web/wp-includes/wlwmanifest.xml 2 -
+/img/dokter2.jpg 16 http://www.informatikamedisuph.com/Operating_Theatre/consultation
+/img/hospital2.jpg 8 http://informatikamedisuph.com/inpatient
+/inpatientPatient/inpatient/dashboard 4 -
+/img/person-logo.png 42 http://informatikamedisuph.com/inpatient/dashboard
+/robots.txt 18 -
+/index.html 2 http://informatikamedisuph.com/apihome
+/img/linkedin.jpg 36 http://www.informatikamedisuph.com/Operating_Theatre/dokter
+/img/youtube.jpg 38 http://www.informatikamedisuph.com/Operating_Theatre/dokter
+/sitemap.xml 2 -
+/backup 2 -
+/img/background3.png 4 http://informatikamedisuph.com/outpatient
+/img/facebook.jpg 36 http://www.informatikamedisuph.com/Operating_Theatre/dokter
+/sito/wp-includes/wlwmanifest.xml 2 -
+/imgoutpatient/building.jpg 10 http://informatikamedisuph.com/outpatient
+/css/styles.css 22 http://informatikamedisuph.com/outpatient
+/shop/wp-includes/wlwmanifest.xml 2 -
+/misc/drupal.js 2 -
+/img/building.jpg 2 http://informatikamedisuph.com/outpatient
+/dokter 8 http://www.informatikamedisuph.com/Operating_Theatre
+/inpatientPatient 2 http://informatikamedisuph.com/dashboard
+/img/hospital3.jpg 8 http://informatikamedisuph.com/inpatient
+/Operating_Theatre 2 -
+/img/hospital-logo.png 12 http://informatikamedisuph.com/inpatient
+/img/twitter.jpg 36 http://www.informatikamedisuph.com/Operating_Theatre/dokter
+/news/wp-admin/install.php 2 -
+/temp 2 -
+/Operating_Theater 4 -
+/favicon.icons 10 http://informatikamedisuph.com/apihome
+/assets/plugins/popper.min.js 16 http://informatikamedisuph.com/apipage
+/wordpress/wp-includes/wlwmanifest.xml 2 -
+/Providers/HtmlEditorProviders/Telerik/Telerik.Web.UI.DialogHandler.aspx 2 -
+/humans.txt 2 -
+/web 2 -
+/main 2 -
+/wordpress/wp-admin/install.php 4 -
+/wp2/wp-includes/wlwmanifest.xml 2 -
+/apiscs/assets/images/coderdocs-logo.svg 6 http://informatikamedisuph.com/apihome
+/home 2 -
+/kantin 2 http://informatikamedisuph.com/inpatient
+/media/system/js/core.js 2 -
+/wordpress 2 -
+/assets/js/docs.js 16 http://informatikamedisuph.com/apipage
+/emergency 2 http://informatikamedisuph.com/outpatient
+/img/operating_theatre/-.jpg 22 http://www.informatikamedisuph.com/Operating_Theatre
+/test 2 -
+/wp/wp-admin/install.php 2 -
+/site/wp-includes/wlwmanifest.xml 2 -
+/v2 2 -
+/tmp/ 2 -
+/js/cms/panel/panel.js 2 -
+/img/operasi1.jpg 28 http://www.informatikamedisuph.com/Operating_Theatre/dokter
+/wp/wp-admin/setup-config.php 2 -
+/blog/wp-admin/setup-config.php 2 -
+/wp1/wp-includes/wlwmanifest.xml 2 -
+/ads.txt 6 -
+/assets/js/highlight-custom.js 16 http://informatikamedisuph.com/apipage
+/old 2 -
+/wp-content/plugins/523453244/GreenGo.php 2 -
+/operating_theatre.index 2 -
+/img/dokter4.jpg 10 http://www.informatikamedisuph.com/Operating_Theatre/dokter
+/cms/wp-includes/wlwmanifest.xml 2 -
+/new/wp-admin/install.php 2 -
+/wp/wp-includes/wlwmanifest.xml 2 -
+/Operating_theatre 2 -
+/img/Doctor1.jpg 4 http://informatikamedisuph.com/outpatient
+/Operating_theater 2 -
+/media/wp-includes/wlwmanifest.xml 2 -
+//wp-admin/install.php 2 -
+/wordpress/wp-content/plugins/523453244/GreenGo.php 2 -
+/assets/plugins/lightbox/dist/ekko-lightbox.min.js 16 http://informatikamedisuph.com/apipage
+/new/wp-admin/setup-config.php 2 -
+/2019/wp-includes/wlwmanifest.xml 2 -
+/img/hospital1.jpg 8 http://informatikamedisuph.com/inpatient
+/img/instagram.jpg 46 http://www.informatikamedisuph.com/Operating_Theatre/consultation
+/ 36 -
+/img/logo.png 44 http://informatikamedisuph.com/outpatient
+/operating_theatre 12 -
+/assets/css/theme.css 14 http://informatikamedisuph.com/apipage
+/blog/wp-admin/install.php 2 -
+/privacy_policy.php 2 -
+/wp-login.php 8 -
+/inpatientPatient/dashboardInpatient 2 -
+/new 2 -
+/news/wp-admin/setup-config.php 2 -
+/tmp 2 -
+/admin/ 2 -
+/wordpress/wp-admin/setup-config.php 2 -
+/__media__/js/netsoltrademark.php 2 -
+/2018/wp-includes/wlwmanifest.xml 2 -
+/wp-admin/setup-config.php 2 -
+/operating_theater 2 -
+/about 2 http://www.informatikamedisuph.com/Operating_Theatre
+/cms 2 -
+/test/wp-includes/wlwmanifest.xml 2 -
+/website/wp-includes/wlwmanifest.xml 2 -
+/assets/fontawesome/js/all.min.js 10 http://informatikamedisuph.com/apipage
+/assets/images/coderdocs-logo.svg 12 http://informatikamedisuph.com/apipage
+/consultation 4 http://www.informatikamedisuph.com/Operating_Theatre
+/v1 2 -
+/img/Logo_UPH.jpg 34 http://www.informatikamedisuph.com/Operating_Theatre/dokter
+/blog/wp-includes/wlwmanifest.xml 2 -
+/assets/plugins/bootstrap/js/bootstrap.min.js 20 http://informatikamedisuph.com/apipage
+/assets/plugins/jquery.scrollTo.min.js 16 http://informatikamedisuph.com/apipage
+/news/wp-includes/wlwmanifest.xml 2 -
+/wp-includes/wlwmanifest.xml 2 -
+/wp 2 -
+/img/background2.png 4 http://informatikamedisuph.com/outpatient
+/wp-content 2 -
+/assets/plugins/jquery-3.4.1.min.js 12 http://informatikamedisuph.com/apipage
+/wp2 2 -
+/assets/images/features/appify-add-members.gif 8 http://informatikamedisuph.com/apipage
+/blog 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 219
+36.88.43.26 430 498 43763350 20210319135740
+125.165.114.155 90 108 3825124 20210316214912
+180.243.7.234 84 110 24554598 20210313141509
+180.252.241.162 72 96 17484920 20210317085208
+118.96.88.181 46 56 8850892 20210316213706
+36.69.0.19 46 48 158076 20210323005457
+125.161.128.231 44 52 1045644 20210322085156
+139.194.76.23 42 50 1808618 20210323002648
+140.213.7.163 36 56 4445788 20210323002351
+180.252.251.54 36 50 19674960 20210314205740
+139.194.77.59 34 34 149754 20210309225859
+139.255.147.8 32 40 18082302 20210309205311
+2400:8901::f03c:92ff:fe11:67d3 22 22 7418 20210309135742
+139.255.53.218 22 50 26903888 20210323175349 20210323174705 /
+125.161.128.62 14 14 94982 20210319172154
+125.160.64.84 14 40 3471490 20210322092607
+101.128.119.246 14 28 19383782 20210320154713
+110.138.148.213 14 14 42626 20210322110542
+221.229.218.152 12 12 35604 20210315140111
+101.128.119.192 10 16 1527314 20210310224305
+125.165.108.27 10 70 7480298 20210322111450
+182.2.167.217 10 12 447172 20210323002711
+101.128.119.18 8 8 33376 20210313141639
+139.194.77.200 8 8 18768 20210305162321
+110.138.151.146 6 6 16904 20210309151356
+205.169.39.24 4 4 4604 20210306095547
+34.222.7.255 2 2 5408 20210317191556
+47.252.23.1 2 2 5408 20210313015756
+2605:a140:2044:8825::1 2 2 2302 20210308115311
+207.102.138.19 2 2 2302 20210306100106
+34.66.5.218 6 6 6906 20210306235253
+34.77.162.25 4 4 11176 20210320002749
+128.90.147.120 4 4 4604 20210307142213
+104.244.158.127 2 2 2302 20210305183446
+173.195.15.240 2 18 906822 20210321163811
+2600:1f14:b62:9e02:564c:4656:b0f9:84ec 2 2 2302 20210306095849
+208.87.237.140 2 2 2302 20210306085605
+34.222.121.80 2 2 2302 20210306123214
+106.75.52.91 2 2 2302 20210308220241
+108.21.216.150 2 2 2302 20210305225752
+44.242.168.57 2 2 5408 20210312192114
+104.198.8.85 2 2 2302 20210308181029
+34.219.107.185 2 2 2302 20210306191357
+111.7.100.20 2 2 5398 20210313041802
+139.194.76.64 4 4 4604 20210309132108
+191.102.177.5 2 4 7853186 20210310222602
+195.24.67.44 2 2 5678 20210320154826
+205.169.39.33 2 2 2302 20210306095658
+34.219.214.214 2 2 7082 20210305111543
+114.4.4.199 2 2 5480 20210317080353
+35.226.249.122 6 6 6906 20210307115845
+34.82.186.209 2 2 2302 20210308181028
+34.77.162.26 4 4 10632 20210316151033
+92.222.212.18 2 2 7082 20210304232754
+195.138.249.11 2 2 7082 20210304232754
+103.247.196.125 2 2 2302 20210305162839
+104.192.108.9 2 2 2302 20210308233025
+205.169.39.196 4 4 10796 20210313163145
+34.77.162.24 2 2 5398 20210312092528
+103.26.211.5 2 2 6788 20210314205513
+83.47.22.94 2 2 2302 20210309052632
+3.139.235.207 2 4 7853712 20210320030346
+54.176.121.194 6 6 15432 20210309202802
+34.66.134.246 2 2 5408 20210312121635
+54.221.27.173 2 2 2302 20210306194811
+188.166.189.163 2 2 5398 20210315161938
+54.185.61.134 2 2 2302 20210306080527
+192.71.36.158 2 2 5678 20210322124523
+198.98.51.189 2 2 2302 20210306085606
+35.80.21.242 2 2 5152 20210310191858
+160.16.226.151 2 2 2302 20210308114515
+73.244.202.3 2 2 2302 20210305203835
+42.83.147.202 2 2 5438 20210316094232
+34.222.206.71 2 2 5144 20210309190905
+18.221.15.61 2 2 2302 20210306081356
+103.249.65.4 2 2 5760 20210322230051
+204.13.201.137 2 2 2302 20210306085506
+35.202.60.215 6 6 15440 20210310123701
+54.212.71.39 2 2 2302 20210307190432
+111.7.100.21 2 2 2302 20210307105939
+95.177.185.80 4 4 10796 20210315111225
+44.226.205.10 2 2 2302 20210306080955
+44.226.206.120 2 2 2302 20210308190638
+44.234.63.167 2 2 5408 20210318192323
+13.58.141.241 2 2 2302 20210307063004
+199.249.230.73 2 2 2302 20210306165918
+205.169.39.239 4 4 10288 20210309153702
+35.80.21.80 2 2 2302 20210308191558
+139.255.135.135 6 6 16754 20210323102441
+35.160.52.34 2 2 5398 20210317191546
+34.71.142.176 6 6 16204 20210311004253
+35.193.189.191 6 6 6906 20210305233432
+117.50.19.93 2 2 2302 20210308221434
+205.169.39.8 2 2 2302 20210306040231
+38.18.45.184 2 2 2302 20210307153849
+35.243.23.198 2 2 2302 20210306085506
+65.155.30.101 2 2 2302 20210306073103
+138.246.253.24 4 4 10816 20210319022024
+95.49.98.139 4 4 4604 20210306122448
+34.77.162.28 2 2 5448 20210315112122
+83.28.4.87 2 2 2302 20210306122447
+34.68.168.39 6 6 16204 20210311125212
+35.230.62.252 2 2 2302 20210308181049
+2600:1f14:804:fd01:fe4e:58be:b99:bad8 2 2 174 20210304215446
+51.77.129.165 2 2 2302 20210306224603
+169.56.28.4 2 2 2302 20210307171408
+35.239.78.115 6 6 6906 20210306114611
+34.77.162.22 2 2 5176 20210310090954
+23.224.68.74 4 4 11404 20210323070544
+44.234.104.221 2 2 2302 20210307191357
+54.201.180.49 2 2 5690 20210320191946
+8.209.77.144 2 2 5448 20210313015755
+40.117.185.219 4 4 11404 20210321234841
+62.115.15.146 2 2 2302 20210308130912
+34.77.162.17 2 2 5152 20210310003050
+34.82.77.89 2 2 2302 20210308181029
+34.229.214.172 2 2 2302 20210306013548
+52.12.183.191 2 2 2302 20210307080126
+135.148.33.90 2 2 2302 20210306085506
+92.118.160.1 2 2 5448 20210313021252
+51.158.161.141 2 2 2302 20210306064041
+146.59.157.229 6 6 6906 20210309081924
+62.210.92.175 2 2 2302 20210309142144
+35.238.68.254 6 6 21246 20210304232602
+44.234.62.163 2 2 5408 20210315191045
+35.232.84.154 6 6 15440 20210310002903
+13.75.225.188 4 4 11356 20210323063446
+34.213.44.112 2 2 5678 20210322192929
+35.202.102.233 6 6 6906 20210309122301
+35.226.58.109 6 6 21246 20210305113029
+35.239.43.242 2 2 2302 20210307215237
+223.29.254.243 2 2 2302 20210306101323
+34.77.162.6 4 4 10836 20210318030450
+34.77.162.20 2 2 5726 20210320203740
+161.0.8.88 2 2 5144 20210310222542
+35.243.23.194 2 2 2302 20210306085516
+51.222.43.147 6 6 6906 20210306224258
+92.118.160.13 2 2 5690 20210321180223
+194.37.98.121 2 2 2302 20210308163354
+221.2.155.200 6 6 6906 20210307192136
+34.217.114.35 2 2 2302 20210306072532
+69.25.58.60 4 4 4604 20210306103058
+54.185.96.28 2 2 2302 20210307123214
+34.77.162.29 2 2 5408 20210318032359
+74.125.212.201 2 2 2302 20210306085505
+2a05:d014:3ad:700:b22c:ca2c:7496:bfa 2 2 174 20210304215446
+54.184.224.87 2 2 2302 20210307190537
+34.77.162.11 2 2 2302 20210309134334
+104.251.219.233 2 2 2302 20210305183447
+192.53.115.152 0 94 330586622 
+47.98.48.224 2 2 5438 20210313015751
+47.242.129.145 2 2 2302 20210307082744
+115.89.74.126 2 2 2302 20210306190624
+195.201.41.238 2 2 2302 20210306081918
+123.56.69.195 2 2 5398 20210313015751
+192.3.166.60 2 2 5398 20210312002737
+44.234.48.116 2 2 2302 20210306123246
+34.220.51.136 2 2 2302 20210307075938
+104.238.217.123 2 2 2302 20210305193932
+45.128.134.195 2 2 2302 20210306032239
+35.161.137.10 2 2 2302 20210306080953
+139.194.77.155 2 2 7082 20210304222029
+121.5.153.12 2 2 5398 20210314110137
+221.234.44.18 2 2 5438 20210314232912
+34.214.240.66 2 2 2302 20210308101409
+34.221.146.153 2 2 5398 20210315191039
+169.57.230.233 2 2 0 20210307171415
+102.165.54.211 2 2 5398 20210310235631
+52.36.193.11 2 2 5690 20210322201632
+125.160.65.8 6 6 42550 20210313135322
+34.217.127.71 2 2 2302 20210307080026
+34.77.162.19 2 2 5408 20210313011027
+18.237.23.92 2 2 2302 20210306191404
+35.184.33.1 6 6 6906 20210309001353
+44.228.141.192 2 2 5398 20210318192352
+35.80.31.37 2 2 5398 20210318192314
+35.232.217.119 6 6 21246 20210304232159
+202.57.14.18 6 8 7864438 20210316190055
+36.74.117.153 4 4 24328 20210316213755
+92.118.160.17 2 2 5678 20210322200504
+44.234.144.134 2 2 5678 20210320191936
+23.94.83.114 2 2 5398 20210312141306
+18.197.193.89 2 2 2302 20210306085715
+2600:1f16:269:da01:367:cea2:153a:d5c8 2 2 174 20210304215446
+62.4.14.206 2 2 2302 20210305175413
+137.135.84.149 4 4 10836 20210316014002
+171.13.14.84 4 4 4604 20210308204503
+18.188.229.37 2 2 2302 20210305164639
+196.16.223.122 2 2 2302 20210306101431
+178.171.92.196 2 2 2302 20210307194935
+104.198.140.104 6 6 6906 20210308120738
+2a01:4f8:251:28ed::2 2 2 2302 20210306214900
+171.13.14.16 2 2 2302 20210308204522
+202.43.172.4 2 2 2302 20210309121847
+3.140.247.68 2 2 5398 20210312170113
+2001:4ca0:108:42::24 4 4 11098 20210320205301
+182.253.131.117 2 4 21348 20210323012325
+178.171.46.127 2 2 2302 20210309094225
+35.80.9.194 2 2 2302 20210306080526
+110.50.80.198 2 2 5760 20210322092604
+124.71.180.89 4 4 9384 20210305172301
+46.134.52.166 4 4 4604 20210306122352
+34.224.166.170 6 6 6906 20210309043045
+35.243.23.213 4 4 4604 20210306085614
+82.112.184.223 4 4 4604 20210306091330
+111.7.100.22 6 6 13098 20210313041751
+222.124.44.50 4 4 4604 20210309105617
+34.77.162.10 2 2 5690 20210319132133
+23.96.90.107 2 2 2302 20210309085532
+180.252.120.232 2 2 7082 20210305150003
+44.234.188.107 2 2 2302 20210306183303
+52.201.214.243 4 4 2302 20210306100135
+72.13.62.25 6 6 17666 20210311100908
+35.193.59.203 6 6 6906 20210308000354
+34.220.134.89 2 2 2302 20210308190632
+44.229.14.164 2 2 2302 20210306123210
+35.222.12.186 6 6 15440 20210310002853
+44.228.129.132 2 2 2302 20210307080513
+18.237.229.85 2 2 2302 20210307123547
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 20
+20210304 32 32 64772 9
+20210305 44 44 88884 16
+20210306 124 124 140422 50
+20210307 52 52 57550 22
+20210308 48 48 55248 20
+20210309 140 150 26183106 24
+20210310 42 56 33002128 11
+20210311 18 20 7898108 3
+20210312 14 16 7885850 7
+20210313 118 150 48231862 12
+20210314 44 68 58938162 5
+20210315 28 42 55015126 8
+20210316 170 224 51811344 10
+20210317 96 154 50654684 6
+20210318 16 48 21389732 6
+20210319 416 446 42289318 4
+20210320 30 68 51722618 9
+20210321 38 70 25440164 5
+20210322 136 188 14187086 13
+20210323 90 156 64361468 9
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+5mn-15mn 6
+2mn-5mn 4
+30s-2mn 8
+1h+ 6
+15mn-30mn 4
+30mn-1h 1
+0s-30s 219
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 37
+/ 722 1522098 228 206
+/inpatient 164 1246818 4 8
+/login 158 448996 3 7
+/dashboard 112 401518 0 3
+/inpatient/dashboard 90 656318 0 2
+/outpatient 52 315664 2 2
+/inpatientPatient/inpatient/dashboard 44 509124 0 0
+/Operating_Theatre 42 1480996 3 4
+/room 30 625710 0 1
+/facility 28 105420 0 1
+/register 24 82846 1 3
+/Operating_Theatre/dokter 24 834864 0 1
+/apihome 24 187460 4 1
+/apipage 24 1276208 0 3
+/_ignition/health-check 24 696 0 0
+/patient 22 231286 0 0
+/Operating_Theatre/consultation 20 695984 0 1
+/doctor 16 177664 0 1
+/Operating_Theatre/about 12 417612 0 0
+/doctor/8/edit 8 65760 0 0
+/receipt 8 83300 0 0
+/inpatientPatient 8 85816 0 0
+/.well-known/acme-challenge/8EuTKoucyO0vpsvELaC3FW4SuUIQ7iJhqYdDWx3n5Pw 6 522 3 3
+/patient/3 6 28632 0 0
+/consulting 4 39744 0 0
+/receipt/3/edit 2 30800 0 0
+/doctor/8 2 10268 0 0
+/3 2 9544 0 0
+/doctor/create 2 15834 0 0
+/.well-known/acme-challenge/GUON90HYG1A8UIOAK2BLK1N4HM0-KLUO 2 128 0 0
+/.well-known/acme-challenge/KW4Q-WA66J2V-P7N04MK41EFL9AGK98D 2 128 0 0
+/.well-known/acme-challenge/37OZ178XEPS3Y9O20O0QO-CID_CF_ACR 2 128 1 0
+/tmp/ 2 1192 0 0
+/.well-known/acme-challenge/NQKN59W-66Z0ARQO1I--Z3SVAKHQ6HRE 2 128 0 1
+/consulting/1/edit 2 8998 0 0
+/patient/create 2 15952 0 0
+/inpatientPatient/dashboardInpatient 2 23062 0 0
+END_SIDER
