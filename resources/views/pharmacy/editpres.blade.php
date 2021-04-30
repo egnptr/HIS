@@ -50,7 +50,7 @@
                         @method('patch')
                         @csrf
                         <div class="form-group">
-                            <label>Nama Dokter</label> 
+                            <label>Doctors</label> 
                             <<select id="Doctors" name="Doctors" class="form-control" value={{ $edited-> Doctors }}>
                             <option value={{ $edited-> Doctors }} selected require>{{ $edited-> Doctors }}</option>
                         @foreach ($doctors as $doctor)
@@ -61,7 +61,7 @@
                     </select>
                         </div>
                         <div class="form-group">
-                            <label>Nama Pasien</label>
+                            <label>Patients</label>
                             <select id="Patients" name="Patients" class="form-control" value={{ $edited-> Patients }}>
                                 <option value={{ $edited-> Patients }} selected require>{{ $edited-> Patients }}</option>
                         @foreach ($patients as $patient)
@@ -69,10 +69,10 @@
                                 {{ $patient->name }}
                             </option>
                         @endforeach
-                    </select> 
+                    </select>
                         </div>
                         <div class="form-group">
-                            <label>Obat 1</label>
+                            <label>Obat_1</label>
                             <select id="Obat_1" name="Obat_1" class="form-control" value={{ $edited-> Obat_1 }}>
                                 <option value={{ $edited-> Obat_1 }} selected require>{{ $edited-> Obat_1 }}</option>
                         @foreach ($obat as $Nama_Obat)
@@ -82,11 +82,11 @@
                         @endforeach
                     </select
                         <div class="form-group">
-                            <label>Dosis Obat 1</label>
+                            <label>Dosis_Obat_1</label>
                             <input type="number" name="Dosis_Obat_1" class="form-control" value={{ $edited-> Dosis_Obat_1 }}>
                         </div> 
                         <div class="form-group">
-                            <label>Obat 2</label>
+                            <label>Obat_2</label>
                             <select id="Obat_2" name="Obat_2" class="form-control" value={{ $edited-> Obat_2 }}>
                                 <option value={{ $edited-> Obat_2 }}>{{ $edited-> Obat_2 }}</option>
                                 <option value=""</option>
@@ -97,11 +97,11 @@
                         @endforeach
                     </select>
                         <div class="form-group">
-                            <label>Dosis Obat 2</label>
+                            <label>Dosis_Obat_2</label>
                             <input type="number" name="Dosis_Obat_2" class="form-control" value={{ $edited-> Dosis_Obat_2 }}>
                         </div>
                         <div class="form-group">
-                            <label>Obat 3</label>
+                            <label>Obat_3</label>
                             <select id="Obat_3" name="Obat_3" class="form-control" value={{ $edited-> Obat_3 }}>
                                 <option value={{ $edited-> Obat_3 }} >{{ $edited-> Obat_3 }}</option>
                                 <option value=""</option>
@@ -113,11 +113,11 @@
                     </select>
                         
                         <div class="form-group">
-                            <label>Dosis Obat 3</label>
+                            <label>Dosis_Obat_3</label>
                             <input type="number" name="Dosis_Obat_3" class="form-control" value={{ $edited-> Dosis_Obat_3 }}  >
                         </div>
                         <div class="form-group">
-                            <label>Obat 4</label>
+                            <label>Obat_4</label>
                             <select id="Obat_4" name="Obat_4" class="form-control" value={{ $edited-> Obat_4 }}>
                                 <option value={{ $edited-> Obat_4 }} >{{ $edited-> Obat_4 }}</option>
                                 <option value=""</option>
@@ -129,11 +129,11 @@
                     </select>
                         
                         <div class="form-group">
-                            <label>Dosis Obat 4</label>
+                            <label>Dosis_Obat_4</label>
                             <input type="number" name="Dosis_Obat_4" class="form-control" value={{ $edited-> Dosis_Obat_4 }}>
                         </div>
                         <div class="form-group">
-                            <label>Obat 5</label>
+                            <label>Obat_5</label>
                             <select id="Obat_5" name="Obat_5" class="form-control" value={{ $edited-> Obat_5 }}>
                                 <option value={{ $edited-> Obat_5 }} >{{ $edited-> Obat_5 }}</option>
                                 <option value=""</option>
@@ -145,7 +145,7 @@
                     </select>
                         
                         <div class="form-group">
-                            <label>Dosis Obat 5</label>
+                            <label>Dosis_Obat_5</label>
                             <input type="number" name="Dosis_Obat_5" class="form-control" value={{ $edited-> Dosis_Obat_5 }}>
                         </div>
                         <button type="submit" class="btn btn-success">Simpan</button>

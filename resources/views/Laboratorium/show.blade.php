@@ -67,8 +67,8 @@
                 <a href="{{ route('emr.show', $patient) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View EMR</a>
             </div>
             
-           <div class="flex p-6">
-                <a href="{{ route('Laboratorium.checkout', $patient) }}" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Checkout</a>
+            <div class="flex p-6">
+                <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Prescribe Medicine</a>
             </div>
 
             <div class="flex p-6">

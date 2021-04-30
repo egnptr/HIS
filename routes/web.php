@@ -49,11 +49,9 @@ Route::get('/facility', [FacilityController::class, 'index'])
 Route::get('/schedule', [ScheduleController::class, 'index'])
     ->name('schedule')
     ->middleware('auth');
-    
 Route::get('/schedule/table', [ScheduleController::class, 'table'])
     ->name('schedule.table')
-    ->middleware('auth');    
-    
+    ->middleware('auth');
 
 Route::group(['middleware' => 'auth', 'prefix' => 'doctor'], function () {
     Route::get('/', [DoctorController::class, 'index'])->name('doctor');
@@ -187,14 +185,17 @@ Route::group(['middleware' => 'auth'], function () {
     // // Route::get('/operating_theatre/consultation', function() {
     //     return view('operating_theatre.consultation');
     // });
-    
-    
+
     /* ------------------- Bridging --------------------- */
-    
+
     Route::get('/api', function() {
-        return view('api.api');
+        return view('api.home');
+    })->name('api');
+
+    Route::get('/api/page', function() {
+        return view('api.apipage');
     });
-    
+
     /* ------------------- Radiologi --------------------- */
 
     Route::get('/Radiologi', function() {
@@ -222,8 +223,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/Laboratorium/outpatient/{id}', [laboratoriumcontroller::class, 'show'])->name('Laboratorium.show');
     Route::get('/Laboratorium/create', [laboratoriumcontroller::class, 'create'])->name('Laboratorium.create');
     Route::post('/Laboratorium/create', [laboratoriumcontroller::class, 'store']);
-    Route::get('/Radiologi/laboratorypatient/{id}/checkout', [laboratoriumcontroller::class, 'checkout'])->name('Laboratorium.checkout');
-    Route::post('/Radiologi/laboratorypatient/{id}/checkout/{scanning_tool}/{scanning_tool_cost}/{total_cost}', [laboratoriumcontroller::class, 'finish'])->name('Laboratorium.finish');
 
     /* ------------------- Pharmacy --------------------- */
     Route::get('/pharmacy', function() {
@@ -253,8 +252,9 @@ Route::group(['middleware' => 'auth'], function () {
     
     
     Route::get('inforan', 'App\Http\Controllers\TebusController@inforan');
-    Route::get('infotebus/infotebusdetails/{id}', 'App\Http\Controllers\TebusController@infotebusdetails')->name('pharmacy.infotebusdetails');
-    Route::get('infotebus/edittebus/{id}', 'App\Http\Controllers\TebusController@edittebus');
+    Route::get('inforan/addtebus', 'App\Http\Controllers\TebusController@addtebus');
+    Route::post('inforan', 'App\Http\Controllers\TebusController@tebusenter');
+    Route::get('inforan/edittebus/{id}', 'App\Http\Controllers\TebusController@edittebus');
     Route::patch('inforan/{id}', 'App\Http\Controllers\TebusController@edittebusenter');
     Route::delete('inforan/{id}', 'App\Http\Controllers\TebusController@deltebus');
 });

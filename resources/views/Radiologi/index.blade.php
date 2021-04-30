@@ -7,7 +7,7 @@
 <div class="flex justify-center">
     <div class="w-3/4 bg-white p-9 rounded-lg">
         <div class="px-6 py-4 bg-white border-b border-gray-200 font-bold uppercase">
-            Radiology 
+            Radiology & Laboratorium
         </div>
         
         <div class="container mx-auto mt-10 grid grid-cols-1 gap-8 md:grid-cols-3 xl:grid-cols-3">

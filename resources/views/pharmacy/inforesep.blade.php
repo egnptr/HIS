@@ -38,7 +38,7 @@
             <div class = "card">
                 <div class="card-header">
                    <div class="pull-left">
-                        <strong>Informasi Resep</strong>   
+                        <strong>Informasi resep</strong>   
                     </div> 
                     <div class="pull-right">
                         <a href="{{ url('inforesep/addpres') }}" class="btn btn-success btn-sm">

@@ -55,8 +55,7 @@
                         </div>
                         <div class="form-group">
                             <label>Jenis Obat</label>
-                            <select id="Jenis_Obat" name="Jenis_Obat" class="form-control" value={{ $edited-> Jenis_Obat }} >
-                            <option value={{ $edited-> Jenis_Obat }} selected require>{{ $edited-> Jenis_Obat }}</option>
+                            <select id="Jenis_Obat" name="Jenis_Obat" class="form-control" value={{ $edited-> Jenis_Obat }} required>
                                 <option value="Analgesik">Analgesik</option>
                                 <option value="Antibiotik">Antibiotik</option>
                                 <option value="Anti Konvulsan">Anti Konvulsan</option>
@@ -76,8 +75,7 @@
                         </div>
                         <div class="form-group">
                             <label>Kategori Obat</label>
-                            <select id="Kategori_Obat" name="Kategori_Obat" class="form-control" value={{ $edited-> Kategori_Obat }} selected required>
-                            <option value={{ $edited-> Kategori_Obat }} selected require>{{ $edited-> Kategori_Obat }}</option>
+                            <select id="Kategori_Obat" name="Kategori_Obat" class="form-control" value={{ $edited-> Kategori_Obat }} required>
                                 <option value="Butuh Resep">Butuh Resep</option>
                                 <option value="Bebas">Bebas</option>
                             </select>
@@ -96,8 +94,7 @@
                         </div>
                         <div class="form-group">
                             <label>Supplier</label>
-                            <select id="Supplier" name="Supplier" class="form-control" value={{ $edited-> Supplier }} selected required>
-                            <option value={{ $edited-> Supplier }} selected require>{{ $edited-> Supplier }}</option>
+                            <select id="Supplier" name="Supplier" class="form-control" value={{ $edited-> Supplier }} required>
                                 <option value="PT. Afifarma">PT. Afifarma</option>
                                 <option value="PT. ASTA Medica">PT. ASTA Medica</option>
                                 <option value="PT. Aventis">PT. Aventis</option>

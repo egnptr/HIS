@@ -24,6 +24,14 @@
                     </div>
                 @endcan
 
+                @can('admin')
+                    <div class="card bg-white shadow h-auto w-auto rounded-2xl overflow-hidden relative">
+                        <h1 class="shadow-md text-l font-bold text-center text-gray-600 uppercase p-3">Bridging</h1>
+                        <img class="py-2 transform scale-110" src="{{ asset('img/doctor.jpeg') }}" alt="" />
+                        <button onclick="location.href='{{ route('api') }}'" class="card bg-gray-700 hover:bg-gray-600 transition text-white w-full h-1/6 absolute bottom-0 ">Show table</button>
+                    </div>
+                @endcan
+
                 @cannot('staff')
                     <div class="card bg-white shadow h-auto w-auto rounded-2xl overflow-hidden relative">
                         <h1 class="shadow-md text-l font-bold text-center text-gray-600 uppercase p-3">Patient List</h1>
