@@ -1,5 +1,5 @@
-# HIS
- siskes with php laravel
+# Hospital Information System
+Web based HIS made with laravel framework
 
 ## Installation
 
